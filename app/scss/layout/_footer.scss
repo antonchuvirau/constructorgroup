@@ -1,0 +1,42 @@
+.footer {
+    border-top: 1px solid rgba($black-300, .2);
+    padding: 55px 0;
+    &__wrapper {
+        @include flex();
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__links {
+        @include flex();
+        margin-left: auto;
+    }
+    &__tel-link {
+        text-decoration: none;
+        color: $black;
+        letter-spacing: .05em;
+        margin-right: 40px;
+        &:hover {
+            color: $black-300;
+        }
+    }
+    &__lang {
+        margin-right: 25px;
+    }
+    &__text {
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: .05em;
+    }
+    &__dev {
+        margin-left: auto;
+        & a {
+            text-decoration: none;
+            color: $black;
+            &:hover {
+                color: $black-300;
+            }
+        }
+    }
+}

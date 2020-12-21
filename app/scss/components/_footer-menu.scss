@@ -1,0 +1,15 @@
+.footer-menu {
+    @include flex();
+    &__item {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .15em;
+        color: $black;
+    }
+}

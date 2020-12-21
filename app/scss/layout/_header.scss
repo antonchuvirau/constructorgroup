@@ -1,0 +1,35 @@
+.header {
+    padding: 45px 0;
+    &__logo {
+        display: inline-block;
+        &-icon {
+            max-width: 290px;
+        }
+    }
+    &__content {
+        @include flex(row, center, flex-end);
+    }
+    &__tel-link {
+        color: $black;
+        text-decoration: none;
+        font-size: 2rem;
+        letter-spacing: .05em;
+        margin-right: 180px;
+        &:hover {
+            color: $black-300;
+        }
+    }
+    &__menu-button {
+        position: relative;
+        padding-left: 45px;
+        font-size: 2rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
