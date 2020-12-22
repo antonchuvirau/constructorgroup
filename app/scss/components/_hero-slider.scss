@@ -3,13 +3,13 @@
     &__item {
         position: relative;
         height: 42.3vw;
-        flex-basis: 140px;
+        flex-basis: 120px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%;
-        transition: all .35s linear;
-        cursor: pointer;
+        transition: all .35s ease;
         overflow: hidden;
+        cursor: pointer;
         &::after {
             content: '';
             position: absolute;
@@ -34,7 +34,7 @@
             transform-origin: 0 0;
             transform: rotate(-90deg);
             top: calc(100% - 40px);
-            left: 45px;
+            left: 37px;
             margin: 0;
             font-size: 2.7rem;
             color: $white;
@@ -51,7 +51,7 @@
             width: 100%;
             transform: translateY(-50%);
             text-align: center;
-            transition: opacity .35s linear;
+            transition: opacity .25s linear;
             z-index: 1;
         }
         &-icon {
