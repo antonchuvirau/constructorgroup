@@ -41,7 +41,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/swiper';
 
 // 3. Base stuff
 @import
@@ -59,7 +60,8 @@
 @import
   'components/button',
   'components/footer-menu',
-  'components/lang';
+  'components/lang',
+  'components/hero-slider';
 
 // 6. Page-specific styles
 @import

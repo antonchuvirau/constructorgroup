@@ -1,0 +1,11 @@
+.hero-slider {
+    &__item {
+        height: 42.3vw;
+        flex: 1 1 140px;
+        background-size: cover;
+        background-position: 50%;
+        &.swiper-slide-active {
+            flex: 1 1 auto;
+        }
+    }
+}

@@ -42,7 +42,7 @@ gulp.task('assets', function(){
 
 gulp.task('images', function(){
     return gulp.src('app/assets/img/**')
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest('public/img'))
 });
 
