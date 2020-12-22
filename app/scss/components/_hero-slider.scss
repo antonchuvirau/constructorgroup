@@ -1,11 +1,14 @@
 .hero-slider {
+    @include flex();
     &__item {
         height: 42.3vw;
-        flex: 1 1 140px;
+        flex-basis: 8%;
         background-size: cover;
         background-position: 50%;
-        &.swiper-slide-active {
-            flex: 1 1 auto;
+        transition: all .25s ease-in;
+        cursor: pointer;
+        &_active {
+            flex-basis: 100%;
         }
     }
 }

@@ -1,12 +1,17 @@
-'use strict';
+function onHeroSliderBoxClickHandler(evt) {
+    const target = evt.target;
+    const heroSliderItems = document.querySelectorAll(`.hero-slider__item`);
+    const heroSliderTargetItem = target.closest(`.hero-slider__item`);
 
-const heroSliderBox = document.querySelector(`.hero-slider__box`);
+    utilsModule.changeDOMCollectionClass(heroSliderTargetItem, heroSliderItems, `hero-slider__item_active`);
+}
 
-document.addEventListener(`DOMContentLoaded`, () => {
-    // Инициализация главного слайдера
-    if (heroSliderBox) {
-        new Swiper(heroSliderBox, {
-            slidesPerView: `auto`
-        });
-    }
-});
+const utilsModule = window.utils;
+const heroSliderBox = document.querySelector(`.hero-slider`);
+
+document.addEventListener(`DOMContentLoaded`, () => {});
+
+// События
+if (heroSliderBox) {
+    heroSliderBox.addEventListener(`click`, onHeroSliderBoxClickHandler);
+}

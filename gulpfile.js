@@ -21,7 +21,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-    return gulp.src(['app/js/plugins.js', 'app/js/main.js'])
+    return gulp.src(['app/js/utils.js', 'app/js/plugins.js', 'app/js/main.js'])
     .pipe(babel())
     .on('error', function(e) {
         console.log('>>> ERROR', e);
