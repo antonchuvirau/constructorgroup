@@ -8,8 +8,15 @@ function onHeroSliderBoxClickHandler(evt) {
 
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
+const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
 
-document.addEventListener(`DOMContentLoaded`, () => {});
+document.addEventListener(`DOMContentLoaded`, () => {
+    if (projectsSectionCarousel) {
+        new Swiper(projectsSectionCarousel, {
+            slidesPerView: 3
+        });
+    }
+});
 
 // События
 if (heroSliderBox) {

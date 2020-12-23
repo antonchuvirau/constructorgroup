@@ -57,14 +57,16 @@
   'layout/footer',
   'layout/main',
   'layout/section',
-  'layout/about-section';
+  'layout/about-section',
+  'layout/projects-section';
 
 // 5. Components
 @import
   'components/button',
   'components/footer-menu',
   'components/lang',
-  'components/hero-slider';
+  'components/hero-slider',
+  'components/box';
 
 // 6. Page-specific styles
 @import

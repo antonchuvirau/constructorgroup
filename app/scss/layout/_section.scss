@@ -1,3 +1,6 @@
 .section {
     position: relative;
+    &__header {
+        margin-bottom: 30px;
+    }
 }
