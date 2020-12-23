@@ -1,6 +1,23 @@
 .section {
     position: relative;
     &__header {
+        position: relative;
         margin-bottom: 30px;
+    }
+    &__navigation {
+        @include flex(row, center);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        &-button {
+            @include flex(row, center, center);
+            width: 35px;
+            height: 25px;
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }

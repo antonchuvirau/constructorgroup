@@ -1,8 +1,57 @@
 .box {
+    display: block;
     position: relative;
+    text-decoration: none;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba($dark, .5), rgba($dark, 0));
+    }
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    &__content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 30px 35px;
+        z-index: 1;
+        &-note {
+            margin: 0;
+            letter-spacing: .1em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        &-text {
+            & p {
+                margin: 0;
+                letter-spacing: .04em;
+                color: $white;
+                line-height: 1.65;
+            }
+        }
+    }
+    &__title {
+        font-size: 2.8rem;
+        color: $white;
+        &::after {
+            width: 70px;
+            height: 4px;
+            top: calc(100% + 5px);
+        }
+    }
+    &__link {
+        margin: 0;
+        color: $dark;
+        margin-top: 10px;
     }
 }

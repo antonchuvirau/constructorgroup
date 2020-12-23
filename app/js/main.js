@@ -13,7 +13,8 @@ const projectsSectionCarousel = document.querySelector(`.projects-section__carou
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
         new Swiper(projectsSectionCarousel, {
-            slidesPerView: 3
+            slidesPerView: 3,
+            spaceBetween: 30
         });
     }
 });
