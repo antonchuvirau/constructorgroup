@@ -71,7 +71,8 @@
   'layout/project-template',
   'layout/project-description',
   'layout/text-section',
-  'layout/project-video-section';
+  'layout/project-video-section',
+  'layout/project-online-section';
 
 // 5. Components
 @import
@@ -87,7 +88,8 @@
   'components/project-hero-slider',
   'components/project-team',
   'components/project-address',
-  'components/project-numbers';
+  'components/project-numbers',
+  'components/project-road-item';
 
 // 6. Page-specific styles
 @import

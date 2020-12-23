@@ -1,0 +1,22 @@
+.project-online-section {
+    &__grid {
+        position: relative;
+    }
+    &__pagination {
+        top: calc(100% + 55px);
+    }
+    &__button {
+        @include flex(row, center, center);
+        width: 45px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        &[data-direction="prev"] {
+            left: 0;
+        }
+        &[data-direction="next"] {
+            right: 0;
+        }
+    }
+}

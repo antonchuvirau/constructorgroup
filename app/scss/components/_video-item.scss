@@ -30,6 +30,14 @@
             width: 90px;
             height: 90px;
             margin-bottom: 25px;
+            &_bigger {
+                width: 105px;
+                height: 105px;
+                & svg {
+                    width: 105px;
+                    height: 105px;
+                }
+            }
         }
         &-date {
             letter-spacing: .04em;
@@ -39,6 +47,11 @@
             font-size: 2.4rem;
             color: $white;
             margin-top: 5px;
+            &_upper {
+                text-transform: uppercase;
+                margin-top: 20px;
+                font-size: 3.2rem;
+            }
             &::after {
                 width: 65px;
                 height: 4px;

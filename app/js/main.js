@@ -12,6 +12,8 @@ const projectsSectionCarousel = document.querySelector(`.projects-section__carou
 const servicesSectionCarousel = document.querySelector(`.services-section__carousel`);
 const projectHeroSliderBox = document.querySelector(`.project-hero-slider__box`);
 const projectVideoCarousel = document.querySelector(`.project-video-section__carousel`);
+const projectRoadCarousel = document.querySelector(`.project-road-section__carousel`);
+const projectOnlineCarousel = document.querySelector(`.project-online-section__carousel`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -62,7 +64,32 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            }
+        });
+    }
+    if (projectRoadCarousel) {
+        new Swiper(projectRoadCarousel, {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                prevEl: projectRoadCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
+                nextEl: projectRoadCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            }
+        });
+    }
+    if (projectOnlineCarousel) {
+        new Swiper(projectOnlineCarousel, {
+            effect: `fade`,
+            fadeEffect: {
+                crossFade: true
             },
+            pagination: {
+                el: projectOnlineCarousel.closest(`.section`).querySelector(`.swiper-pagination`)
+            },
+            navigation: {
+                prevEl: projectOnlineCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
+                nextEl: projectOnlineCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            }
         });
     }
 });
