@@ -26,12 +26,17 @@
         transition: transform .25s ease-in-out;
         padding: 30px 35px;
         z-index: 1;
+        &_bigger {
+            transform: translateY(calc(100% - 170px));
+        }
         &-note {
             margin: 0;
             letter-spacing: .1em;
+            line-height: 1.45;
             margin-bottom: 20px;
             text-transform: uppercase;
             color: $white;
+            max-width: 245px;
         }
         &-text {
             opacity: 0;
