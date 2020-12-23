@@ -60,7 +60,8 @@
   'layout/about-section',
   'layout/projects-section',
   'layout/news-section',
-  'layout/video-section';
+  'layout/video-section',
+  'layout/template';
 
 // 5. Components
 @import
@@ -70,7 +71,8 @@
   'components/hero-slider',
   'components/box',
   'components/news-item',
-  'components/video-item';
+  'components/video-item',
+  'components/about-hero';
 
 // 6. Page-specific styles
 @import
