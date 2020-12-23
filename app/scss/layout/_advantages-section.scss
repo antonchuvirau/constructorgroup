@@ -1,0 +1,14 @@
+.advantages-section {
+    &__col {
+        margin-bottom: 30px;
+        &-icon {
+            margin-bottom: 10px;
+        }
+        &-name {
+            margin: 0;
+            line-height: 1.65;
+            font-weight: 600;
+            max-width: 265px;
+        }
+    }
+}

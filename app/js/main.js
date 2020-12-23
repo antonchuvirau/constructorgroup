@@ -9,6 +9,7 @@ function onHeroSliderBoxClickHandler(evt) {
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
+const servicesSectionCarousel = document.querySelector(`.services-section__carousel`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -18,6 +19,16 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            }
+        });
+    }
+    if (servicesSectionCarousel) {
+        new Swiper(servicesSectionCarousel, {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                prevEl: servicesSectionCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
+                nextEl: servicesSectionCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
             }
         });
     }
