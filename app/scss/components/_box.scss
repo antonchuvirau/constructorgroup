@@ -21,21 +21,25 @@
         width: 100%;
         bottom: 0;
         left: 0;
+        transform-origin: 0 0;
+        transform: translateY(calc(100% - 155px));
+        transition: transform .25s ease-in-out;
         padding: 30px 35px;
         z-index: 1;
         &-note {
             margin: 0;
             letter-spacing: .1em;
-            margin-top: 25px;
-            margin-bottom: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             color: $white;
         }
         &-text {
+            opacity: 0;
             & p {
                 margin: 0;
                 letter-spacing: .04em;
-                color: $white;
+                color: $dark;
                 line-height: 1.65;
             }
         }
@@ -46,12 +50,36 @@
         &::after {
             width: 70px;
             height: 4px;
-            top: calc(100% + 5px);
+            top: calc(100% + 8px);
         }
     }
     &__link {
+        opacity: 0;
         margin: 0;
         color: $dark;
-        margin-top: 10px;
+        margin-top: 15px;
+    }
+    &:hover {
+        & .box {
+            &__title {
+                color: $dark;
+                &::after {
+                    background: $white;
+                }
+            }
+            &__content {
+                transform: translateY(0);
+                background: $primary;
+                &-note {
+                    color: $dark;
+                }
+                &-text {
+                    opacity: 1;
+                }
+            }
+            &__link {
+                opacity: 1;
+            }
+        }
     }
 }

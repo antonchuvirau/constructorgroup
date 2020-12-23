@@ -18,6 +18,14 @@
             &:last-child {
                 margin-right: 0;
             }
+            &:hover {
+                & path {
+                    stroke: $primary;
+                }
+            }
+            &.swiper-button-disabled {
+                opacity: 0;
+            }
         }
     }
 }

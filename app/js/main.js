@@ -14,7 +14,11 @@ document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
         new Swiper(projectsSectionCarousel, {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
+            navigation: {
+                prevEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
+                nextEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            }
         });
     }
 });
