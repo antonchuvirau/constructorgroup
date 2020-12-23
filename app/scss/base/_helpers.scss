@@ -7,3 +7,33 @@
     padding: 0;
     margin: 0;
 }
+
+.title {
+    margin: 0;
+    font-size: 2.4rem;
+    color: $dark;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    &_l {
+        font-size: 3.6rem;
+    }
+    &__note {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+}
+
+.line {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 115px;
+        height: 5px;
+        background: $primary;
+        top: calc(100% + 10px);
+        left: 0;
+    }
+}
