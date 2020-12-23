@@ -1,0 +1,19 @@
+.project-numbers {
+    @include flex(row, flex-start, flex-start, wrap);
+    &__item {
+        width: 33.333%;
+        margin: 0;
+        margin-top: 45px;
+        &-value {
+            display: block;
+            font-size: 4.2rem;
+        }
+        &-name {
+            display: block;
+            font-size: 1.4rem;
+            color: $black-300;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+    }
+}

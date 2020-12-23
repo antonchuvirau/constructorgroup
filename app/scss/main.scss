@@ -67,7 +67,11 @@
   'layout/services-section',
   'layout/partner-section',
   'layout/projects-template',
-  'layout/projects-list';
+  'layout/projects-list',
+  'layout/project-template',
+  'layout/project-description',
+  'layout/text-section',
+  'layout/project-video-section';
 
 // 5. Components
 @import
@@ -78,7 +82,12 @@
   'components/box',
   'components/news-item',
   'components/video-item',
-  'components/about-hero';
+  'components/about-hero',
+  'components/swiper-pagination',
+  'components/project-hero-slider',
+  'components/project-team',
+  'components/project-address',
+  'components/project-numbers';
 
 // 6. Page-specific styles
 @import

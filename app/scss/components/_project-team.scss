@@ -1,0 +1,39 @@
+.project-team {
+    padding: 45px 50px;
+    background: $light;
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &__list {
+        @include flex();
+        &-col {
+            width: 50%;
+            &:last-child {
+                & .project-team {
+                    &__list-item {
+                        &:last-child {
+                            & span {
+                                display: block;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-item {
+            letter-spacing: .05em;
+            margin: 0;
+            line-height: 2.125;
+        }
+        &-value {
+            font-weight: 600;
+            margin-left: 5px;
+        }
+    }
+}

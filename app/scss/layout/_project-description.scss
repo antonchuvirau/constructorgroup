@@ -1,0 +1,17 @@
+.project-description {
+    &__title {
+        font-size: 3rem;
+        text-transform: none;
+        letter-spacing: .04em;
+        max-width: 660px;
+        margin-bottom: 65px;
+    }
+    &__col {
+        &:first-child {
+            padding-right: 60px;
+        }
+    }
+    &__numbers {
+        margin-top: 65px;
+    }
+}

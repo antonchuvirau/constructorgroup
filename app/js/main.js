@@ -10,6 +10,8 @@ const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
 const servicesSectionCarousel = document.querySelector(`.services-section__carousel`);
+const projectHeroSliderBox = document.querySelector(`.project-hero-slider__box`);
+const projectVideoCarousel = document.querySelector(`.project-video-section__carousel`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -44,6 +46,23 @@ document.addEventListener(`DOMContentLoaded`, () => {
                     slidesPerView: 4
                 }
             }
+        });
+    }
+    if (projectHeroSliderBox) {
+        new Swiper(projectHeroSliderBox, {
+            pagination: {
+                el: projectHeroSliderBox.closest(`.project-hero-slider`).querySelector(`.project-hero-slider__pagination`)
+            }
+        });
+    }
+    if (projectVideoCarousel) {
+        new Swiper(projectVideoCarousel, {
+            slidesPerView: `auto`,
+            spaceBetween: 30,
+            navigation: {
+                prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
+                nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            },
         });
     }
 });

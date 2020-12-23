@@ -1,0 +1,15 @@
+.project-video-section {
+    &__carousel {
+        &-slide {
+            max-width: 930px;
+        }
+        &-item {
+            width: 100%;
+            height: 35.4vw;
+            max-height: 595px;
+        }
+    }
+    &__grid {
+        padding-left: calc((100% - (86% - 30px))/2);
+    }
+}

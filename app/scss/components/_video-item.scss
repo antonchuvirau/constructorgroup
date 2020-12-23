@@ -2,8 +2,6 @@
     position: relative;
     display: block;
     text-decoration: none;
-    width: 100%;
-    height: 26.2vw;
     overflow: hidden;
     &::after {
         content: '';
@@ -31,7 +29,7 @@
         &-button {
             width: 90px;
             height: 90px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         &-date {
             letter-spacing: .04em;
@@ -42,14 +40,15 @@
             color: $white;
             margin-top: 5px;
             &::after {
-                width: 50px;
+                width: 65px;
+                height: 4px;
                 left: 50%;
-                margin-left: -25px;
+                margin-left: -32.5px;
                 top: calc(100% + 8px);
             }
         }
         &-note {
-            margin-top: 25px;
+            margin-top: 35px;
             letter-spacing: .1em;
             color: $white;
             text-transform: uppercase;

@@ -1,0 +1,21 @@
+.project-address {
+    padding-top: 10px;
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: $dark;
+        margin-bottom: 20px;
+    }
+    &__value {
+        display: block;
+        line-height: 1.5;
+        letter-spacing: .04em;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
