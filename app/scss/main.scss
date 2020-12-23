@@ -58,7 +58,8 @@
   'layout/main',
   'layout/section',
   'layout/about-section',
-  'layout/projects-section';
+  'layout/projects-section',
+  'layout/news-section';
 
 // 5. Components
 @import
@@ -66,7 +67,8 @@
   'components/footer-menu',
   'components/lang',
   'components/hero-slider',
-  'components/box';
+  'components/box',
+  'components/news-item';
 
 // 6. Page-specific styles
 @import

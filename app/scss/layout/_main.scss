@@ -1,8 +1,12 @@
 .main {
+    padding-bottom: 75px;
     &__about-section {
         margin-top: 90px;
     }
     &__projects-section {
         margin-top: 45px;
+    }
+    &__media-section {
+        margin-top: 60px;
     }
 }
