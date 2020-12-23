@@ -4,3 +4,62 @@
         max-width: 1440px;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .video-item {
+        &__content {
+            &-title {
+                font-size: 2.2rem;
+            }
+            &-note {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .box {
+        &__title {
+            font-size: 2.2rem;
+        }
+        &__content {
+            &-note {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .title {
+        &__note {
+            display: block;
+            margin-left: 0;
+        }
+        &_l {
+            font-size: 3.2rem;
+        }
+    }
+    .about-section {
+        &__img {
+            max-width: 32%;
+        }
+        &__text {
+            & p {
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .hero-slider {
+        &__item {
+            &-name {
+                font-size: 2.3rem;
+            }
+        }
+    }
+    .news-item {
+        &__text {
+            & p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

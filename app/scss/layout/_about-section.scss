@@ -11,8 +11,9 @@
     &__img {
         position: absolute;
         right: 0;
-        top: 0;
-        max-width: 35%;
+        top: 30px;
+        width: 35%;
+        max-width: 585px;
         max-height: 100%;
     }
     &__text {
@@ -34,5 +35,6 @@
         letter-spacing: .1em;
         color: $dark;
         margin-top: 50px;
+        line-height: 1.25;
     }
 }
