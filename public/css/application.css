@@ -5478,7 +5478,14 @@ a {
   .about-hero__numbers-text {
     font-size: 1.6rem; }
   .box__content {
-    padding: 30px 35px; }
+    padding: 30px 35px;
+    -webkit-transform: translateY(calc(100% - 170vw));
+        -ms-transform: translateY(calc(100% - 170vw));
+            transform: translateY(calc(100% - 170vw)); }
+    .box__content_bigger {
+      -webkit-transform: translateY(calc(100% - 190vw));
+          -ms-transform: translateY(calc(100% - 190vw));
+              transform: translateY(calc(100% - 190vw)); }
     .box__content-note {
       font-size: 1.6rem; }
     .box__content-text p {
