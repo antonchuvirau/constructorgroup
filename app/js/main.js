@@ -42,7 +42,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
                     slidesPerView: 2,
                 },
                 992: {
-                    slidesPerView: 3
+                    slidesPerView: 4
                 },
                 1440: {
                     slidesPerView: 4

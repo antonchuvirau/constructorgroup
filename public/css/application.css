@@ -4511,13 +4511,14 @@ a {
     margin-top: 30px;
     padding-right: 40px; }
     .about-section__content p {
+      font-size: .95238vw;
       margin: 0;
       margin-bottom: 25px;
       line-height: 1.65; }
       .about-section__content p:last-child {
         margin-bottom: 0; }
       .about-section__content p:first-child {
-        font-size: 1.8rem; }
+        font-size: 1.0714vw; }
   .about-section__additional-content {
     position: absolute;
     right: 0;
@@ -4528,6 +4529,7 @@ a {
     max-height: 100%;
     max-width: 825px; }
     .about-section__additional-content p {
+      font-size: .95238vw;
       margin: 0;
       letter-spacing: .04em;
       line-height: 1.65;
@@ -4535,12 +4537,13 @@ a {
       .about-section__additional-content p:last-child {
         margin-bottom: 0; }
       .about-section__additional-content p:first-child {
-        font-size: 2rem;
+        font-size: 1.1905vw;
         font-weight: 600;
         letter-spacing: .1em;
         text-transform: uppercase;
         line-height: 1.25; }
     .about-section__additional-content-link {
+      font-size: .95238vw;
       text-decoration: none;
       font-weight: 600;
       color: #444;
@@ -4588,7 +4591,9 @@ a {
     margin: 0;
     line-height: 1.65;
     font-weight: 600;
-    max-width: 265px; }
+    max-width: 265px;
+    width: 15.7738vw;
+    font-size: .95238vw; }
 
 .services-section__item {
   height: 25vw;
@@ -4617,7 +4622,7 @@ a {
     margin: 0 auto; }
   .partner-section__title {
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 1.3095vw;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #fff;
@@ -4626,6 +4631,7 @@ a {
   .partner-section__text {
     margin-top: 35px; }
     .partner-section__text p {
+      font-size: .95238vw;
       margin: 0;
       line-height: 1.65;
       letter-spacing: .04em;
@@ -5211,8 +5217,9 @@ a {
       background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0));
       background: linear-gradient(to top, rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0)); }
   .about-hero__title {
-    font-size: 4rem;
+    font-size: 2.381vw;
     max-width: 620px;
+    width: 36.90vw;
     color: #fff;
     line-height: 1.375; }
   .about-hero__text {
@@ -5220,7 +5227,7 @@ a {
     max-width: 495px; }
     .about-hero__text p {
       margin: 0;
-      font-size: 3.2rem;
+      font-size: 1.90vw;
       letter-spacing: .05em;
       line-height: 1.25;
       color: #fff; }
@@ -5245,11 +5252,12 @@ a {
       margin-right: 65px; }
     .about-hero__numbers-value {
       display: block;
-      font-size: 4.4rem;
+      font-size: 2.6190vw;
       color: #fff;
       letter-spacing: .1em;
       line-height: 1.5; }
     .about-hero__numbers-text {
+      font-size: .95238vw;
       color: #fff;
       letter-spacing: .15em;
       text-transform: uppercase; }

@@ -24,7 +24,9 @@
     }
     &__title {
         margin: 0;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
+        // Flexible font size
+        font-size: 1.3095vw;
         letter-spacing: .1em;
         text-transform: uppercase;
         color: $white;
@@ -34,6 +36,8 @@
     &__text {
         margin-top: 35px;
         & p {
+            // Flexible font size
+            font-size: .95238vw;
             margin: 0;
             line-height: 1.65;
             letter-spacing: .04em;

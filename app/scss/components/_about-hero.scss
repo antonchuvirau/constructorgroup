@@ -28,8 +28,11 @@
         }
     }
     &__title {
-        font-size: 4rem;
+        // font-size: 4rem;
+        // Flexible font size
+        font-size: 2.381vw;
         max-width: 620px;
+        width: 36.90vw;
         color: $white;
         line-height: 1.375;
     }
@@ -38,7 +41,9 @@
         max-width: 495px;
         & p {
             margin: 0;
-            font-size: 3.2rem;
+            // font-size: 3.2rem;
+            // Flexible font size
+            font-size: 1.90vw;
             letter-spacing: .05em;
             line-height: 1.25;
             color: $white;
@@ -52,12 +57,16 @@
         }
         &-value {
             display: block;
-            font-size: 4.4rem;
+            // font-size: 4.4rem;
+            // Flexible font size
+            font-size: 2.6190vw;
             color: $white;
             letter-spacing: .1em;
             line-height: 1.5;
         }
         &-text {
+            // Flexible font size
+            font-size: .95238vw;
             color: $white;
             letter-spacing: .15em;
             text-transform: uppercase;
