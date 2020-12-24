@@ -37,9 +37,9 @@
     .box {
         &__content {
             padding: 30px 35px;
-            transform: translateY(calc(100% - 170vw));
+            transform: translateY(calc(100% - 170px));
             &_bigger {
-                transform: translateY(calc(100% - 190vw));
+                transform: translateY(calc(100% - 190px));
             }
             &-note {
                 font-size: 1.6rem;

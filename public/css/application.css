@@ -5479,13 +5479,13 @@ a {
     font-size: 1.6rem; }
   .box__content {
     padding: 30px 35px;
-    -webkit-transform: translateY(calc(100% - 170vw));
-        -ms-transform: translateY(calc(100% - 170vw));
-            transform: translateY(calc(100% - 170vw)); }
+    -webkit-transform: translateY(calc(100% - 170px));
+        -ms-transform: translateY(calc(100% - 170px));
+            transform: translateY(calc(100% - 170px)); }
     .box__content_bigger {
-      -webkit-transform: translateY(calc(100% - 190vw));
-          -ms-transform: translateY(calc(100% - 190vw));
-              transform: translateY(calc(100% - 190vw)); }
+      -webkit-transform: translateY(calc(100% - 190px));
+          -ms-transform: translateY(calc(100% - 190px));
+              transform: translateY(calc(100% - 190px)); }
     .box__content-note {
       font-size: 1.6rem; }
     .box__content-text p {
