@@ -4526,14 +4526,14 @@ a {
     padding: 50px 90px;
     background: #f7f7f7;
     width: 45%;
-    max-height: 100%;
-    max-width: 825px; }
+    max-height: 100%; }
     .about-section__additional-content p {
       font-size: .95238vw;
       margin: 0;
       letter-spacing: .04em;
       line-height: 1.65;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      max-width: 825px; }
       .about-section__additional-content p:last-child {
         margin-bottom: 0; }
       .about-section__additional-content p:first-child {
