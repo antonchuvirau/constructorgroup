@@ -35,6 +35,8 @@
         text-decoration: none;
         line-height: 1.5;
         margin-bottom: 30px;
+        // Flexible font size
+        font-size: .9524vw;
         &::after {
             top: calc(100% + 8px);
             width: 50px;

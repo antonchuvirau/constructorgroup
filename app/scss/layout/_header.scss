@@ -4,6 +4,8 @@
         display: inline-block;
         &-icon {
             max-width: 290px;
+            // Flexible width
+            width: 17.2619vw;
         }
     }
     &__content {
@@ -12,7 +14,9 @@
     &__tel-link {
         color: $black;
         text-decoration: none;
-        font-size: 2rem;
+        // font-size: 2rem;
+        // Flexible font size
+        font-size: 1.1905vw;
         letter-spacing: .05em;
         margin-right: 180px;
         &:hover {
@@ -22,7 +26,9 @@
     &__menu-button {
         position: relative;
         padding-left: 45px;
-        font-size: 2rem;
+        // font-size: 2rem;
+        // Flexible font size
+        font-size: 1.1905vw;
         letter-spacing: .15em;
         text-transform: uppercase;
         &-icon {

@@ -6,40 +6,10 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .video-item {
-        &__content {
-            &-title {
-                font-size: 2.2rem;
-            }
-            &-note {
-                font-size: 1.5rem;
-            }
-        }
-    }
-    // .box {
-    //     &__title {
-    //         font-size: 2.2rem;
-    //         &_s {
-    //             font-size: 1.6rem;
-    //         }
-    //     }
-    //     &__content {
-    //         &-note {
-    //             font-size: 1.5rem;
-    //         }
-    //     }
-    // }
     .hero-slider {
         &__item {
             &-name {
                 font-size: 2.3rem;
-            }
-        }
-    }
-    .news-item {
-        &__text {
-            & p {
-                font-size: 1.5rem;
             }
         }
     }

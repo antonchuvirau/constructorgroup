@@ -2,7 +2,7 @@
     border-top: 1px solid rgba($black-300, .2);
     padding: 55px 0;
     &__wrapper {
-        @include flex();
+        @include flex(row, center);
         margin-bottom: 40px;
         &:last-child {
             margin-bottom: 0;
@@ -17,6 +17,8 @@
         color: $black;
         letter-spacing: .05em;
         margin-right: 40px;
+        // Flexible font size
+        font-size: .9524vw;
         &:hover {
             color: $black-300;
         }
@@ -26,7 +28,9 @@
     }
     &__text {
         margin: 0;
-        font-size: 1.4rem;
+        // font-size: 1.4rem;
+        // Flexible font size
+        font-size: .83vw;
         letter-spacing: .05em;
     }
     &__dev {

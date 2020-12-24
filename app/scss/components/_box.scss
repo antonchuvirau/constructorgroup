@@ -22,14 +22,14 @@
         bottom: 0;
         left: 0;
         transform-origin: 0 0;
-        transform: translateY(calc(100% - 155px));
+        transform: translateY(calc(100% - 9.2262vw));
         transition: transform .25s ease-in-out;
         // padding: 30px 35px;
         // Flexible padding
         padding: 6.1404% 7.78%;
         z-index: 1;
         &_bigger {
-            transform: translateY(calc(100% - 170px));
+            transform: translateY(calc(100% - 10.1190vw));
         }
         &-note {
             margin: 0;
@@ -88,7 +88,7 @@
         color: $dark;
         margin-top: 15px;
         // Flexible font size
-        font-size: .9524vw;
+            font-size: .9524vw;
     }
     &:hover {
         & .box {
