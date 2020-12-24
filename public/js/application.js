@@ -39,6 +39,11 @@ function onHeroSliderBoxClickHandler(evt) {
   utilsModule.changeDOMCollectionClass(heroSliderTargetItem, heroSliderItems, "hero-slider__item_active");
 }
 
+function getSwiperSliderOffset() {
+  return ((window.innerWidth - window.innerWidth * CONTAINER_WIDTH + 30) / 2).toFixed(2);
+}
+
+var CONTAINER_WIDTH = .86;
 var utilsModule = window.utils;
 var heroSliderBox = document.querySelector(".hero-slider");
 var projectsSectionCarousel = document.querySelector(".projects-section__carousel");
@@ -96,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(projectVideoCarousel, {
       slidesPerView: "auto",
       spaceBetween: 30,
+      slidesOffsetBefore: getSwiperSliderOffset(),
       navigation: {
         prevEl: projectVideoCarousel.closest(".section").querySelector("button[data-direction=\"prev\"]"),
         nextEl: projectVideoCarousel.closest(".section").querySelector("button[data-direction=\"next\"]")
@@ -128,6 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: projectOnlineCarousel.closest(".section").querySelector("button[data-direction=\"next\"]")
       }
     });
+  }
+});
+window.addEventListener("resize", function () {
+  if (projectVideoCarousel) {
+    projectVideoCarousel.swiper.update();
   }
 }); // События
 

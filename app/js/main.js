@@ -6,6 +6,11 @@ function onHeroSliderBoxClickHandler(evt) {
     utilsModule.changeDOMCollectionClass(heroSliderTargetItem, heroSliderItems, `hero-slider__item_active`);
 }
 
+function getSwiperSliderOffset() {
+    return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
+}
+
+const CONTAINER_WIDTH = .86;
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
@@ -61,6 +66,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(projectVideoCarousel, {
             slidesPerView: `auto`,
             spaceBetween: 30,
+            slidesOffsetBefore: getSwiperSliderOffset(),
             navigation: {
                 prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
@@ -91,6 +97,12 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 nextEl: projectOnlineCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
             }
         });
+    }
+});
+
+window.addEventListener(`resize`, () => {
+    if (projectVideoCarousel) {
+        projectVideoCarousel.swiper.update();
     }
 });
 

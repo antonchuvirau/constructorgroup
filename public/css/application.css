@@ -4723,9 +4723,6 @@ a {
   height: 35.4vw;
   max-height: 595px; }
 
-.project-video-section__grid {
-  padding-left: calc((100% - (86% - 30px))/2); }
-
 .project-online-section__grid {
   position: relative; }
 
@@ -4757,6 +4754,10 @@ a {
     left: 0; }
   .project-online-section__button[data-direction="next"] {
     right: 0; }
+  .project-online-section__button.swiper-button-disabled {
+    opacity: 0; }
+  .project-online-section__button:hover path {
+    stroke: #F5BD38; }
 
 .footer-menu {
   display: -webkit-box;
