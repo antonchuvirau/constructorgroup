@@ -12,7 +12,7 @@ function getSwiperSliderOffset() {
     if (window.innerWidth < 1681) {
         return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
     }
-    return ((window.innerWidth - CUSTOM_CONTAINER_WIDTH + 30) / 2).toFixed(2);
+    return ((window.innerWidth - CUSTOM_CONTAINER_WIDTH) / 2).toFixed(2);
 }
 
 function updateServiceSectionTitlesHeight() {
@@ -28,7 +28,7 @@ function updateServiceSectionTitlesHeight() {
     }
 }
 
-const CUSTOM_CONTAINER_WIDTH = 1410;
+const CUSTOM_CONTAINER_WIDTH = 1440;
 const CONTAINER_WIDTH = .86;
 const CUSTOM_TITLE_STEP = 75;
 const CUSTOM_MOBILE_TITLE_STEP = 55;
