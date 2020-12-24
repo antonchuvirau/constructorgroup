@@ -100,7 +100,7 @@
                 }
             }
             &__content {
-                transform: translateY(0);
+                transform: translateY(0) !important;
                 &-note {
                     color: $dark;
                 }

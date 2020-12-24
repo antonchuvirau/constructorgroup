@@ -5011,9 +5011,9 @@ a {
     .box:hover .box__title::after {
       background: #fff; }
   .box:hover .box__content {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
+    -webkit-transform: translateY(0) !important;
+        -ms-transform: translateY(0) !important;
+            transform: translateY(0) !important; }
     .box:hover .box__content-note {
       color: #222; }
     .box:hover .box__content-text {

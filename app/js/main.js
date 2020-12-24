@@ -1,3 +1,5 @@
+'use strict';
+
 function onHeroSliderBoxClickHandler(evt) {
     const target = evt.target;
     const heroSliderItems = document.querySelectorAll(`.hero-slider__item`);
@@ -10,7 +12,16 @@ function getSwiperSliderOffset() {
     return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
 }
 
+function updateServiceSectionTitlesHeight() {
+    const serviceSectionTitles = servicesSectionCarousel.querySelectorAll(`.box__title`);
+    
+    for (const serviceTitle of serviceSectionTitles) {
+        serviceTitle.parentElement.style.transform = `translateY(calc(100% - ${serviceTitle.offsetHeight + CUSTOM_TITLE_STEP}px))`;
+    }
+}
+
 const CONTAINER_WIDTH = .86;
+const CUSTOM_TITLE_STEP = 65;
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
@@ -54,6 +65,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 }
             }
         });
+        // Обновляем высоту заголовка
+        updateServiceSectionTitlesHeight();
     }
     if (projectHeroSliderBox) {
         new Swiper(projectHeroSliderBox, {
@@ -103,6 +116,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
 window.addEventListener(`resize`, () => {
     if (projectVideoCarousel) {
         projectVideoCarousel.swiper.update();
+    }
+    if (servicesSectionCarousel) {
+        updateServiceSectionTitlesHeight();
     }
 });
 
