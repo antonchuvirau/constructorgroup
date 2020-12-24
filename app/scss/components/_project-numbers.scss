@@ -6,11 +6,15 @@
         margin-top: 45px;
         &-value {
             display: block;
-            font-size: 4.2rem;
+            // font-size: 4.2rem;
+            // Flexible font size
+            font-size: 2.5vw;
         }
         &-name {
             display: block;
-            font-size: 1.4rem;
+            // font-size: 1.4rem;
+            // Flexible font size
+            font-size: .833vw;
             color: $black-300;
             text-transform: uppercase;
             margin-top: 5px;

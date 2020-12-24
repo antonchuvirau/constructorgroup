@@ -19,6 +19,8 @@
         transition: transform .25s ease-in-out;
     }
     &__number {
+        // Flexible font size
+        font-size: .95238vw;
         position: absolute;
         bottom: 15px;
         right: 20px;

@@ -4668,7 +4668,7 @@ a {
     margin-top: 75px; }
 
 .project-description__title {
-  font-size: 3rem;
+  font-size: 1.7856vw;
   text-transform: none;
   letter-spacing: .04em;
   max-width: 660px;
@@ -4678,7 +4678,7 @@ a {
   padding-right: 60px; }
 
 .project-description__numbers {
-  margin-top: 65px; }
+  margin-top: 20px; }
 
 .text-section {
   padding: 50px 0;
@@ -4686,16 +4686,19 @@ a {
   .text-section__img {
     position: absolute;
     right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 0;
+    height: 100%;
     width: 42%;
     max-width: 705px;
     max-height: 100%; }
     .text-section__img_left {
       right: auto;
       left: 0; }
+    .text-section__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .text-section__title {
     margin-bottom: 30px; }
   .text-section__col {
@@ -4704,6 +4707,7 @@ a {
       padding-right: 20px;
       padding-left: 90px; }
   .text-section__content p {
+    font-size: .95238vw;
     margin: 0;
     line-height: 1.625;
     letter-spacing: .04em;
@@ -5144,9 +5148,6 @@ a {
         height: 6.25vw;
         max-width: 105px;
         max-height: 105px; }
-        .video-item__content-button_bigger svg {
-          width: 105px;
-          height: 105px; }
     .video-item__content-date {
       font-size: .95238vw;
       letter-spacing: .04em;
@@ -5158,7 +5159,7 @@ a {
       .video-item__content-title_upper {
         text-transform: uppercase;
         margin-top: 20px;
-        font-size: 3.2rem; }
+        font-size: 1.9048vw; }
       .video-item__content-title::after {
         width: 65px;
         height: 4px;
@@ -5318,6 +5319,7 @@ a {
       position: absolute;
       top: 50%;
       left: 50%;
+      width: 33.3vw;
       max-width: 560px;
       -webkit-transform: translate3d(-50%, -50%, 0);
               transform: translate3d(-50%, -50%, 0);
@@ -5330,11 +5332,11 @@ a {
       background: #fff; }
 
 .project-team {
-  padding: 45px 50px;
+  padding: 2.6786vw 2.9762vw;
   background: #f7f7f7; }
   .project-team__title {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.1905vw;
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -5361,6 +5363,7 @@ a {
         display: block;
         margin-left: 0; }
     .project-team__list-item {
+      font-size: .95238vw;
       letter-spacing: .05em;
       margin: 0;
       line-height: 2.125; }
@@ -5372,13 +5375,14 @@ a {
   padding-top: 10px; }
   .project-address__title {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.1905vw;
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #222;
     margin-bottom: 20px; }
   .project-address__value {
+    font-size: .95238vw;
     display: block;
     line-height: 1.5;
     letter-spacing: .04em;
@@ -5408,10 +5412,10 @@ a {
     margin-top: 45px; }
     .project-numbers__item-value {
       display: block;
-      font-size: 4.2rem; }
+      font-size: 2.5vw; }
     .project-numbers__item-name {
       display: block;
-      font-size: 1.4rem;
+      font-size: .833vw;
       color: #707070;
       text-transform: uppercase;
       margin-top: 5px; }
@@ -5442,6 +5446,7 @@ a {
     transition: transform .25s ease-in-out;
     transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
   .project-road-item__number {
+    font-size: .95238vw;
     position: absolute;
     bottom: 15px;
     right: 20px;
