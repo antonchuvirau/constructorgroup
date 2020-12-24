@@ -99,11 +99,13 @@
         }
     }
     .project-numbers {
-        &-value {
-            font-size: 4.2rem;
-        }
-        &-name {
-            font-size: 1.4rem;
+        &__item {
+            &-value {
+                font-size: 4.2rem;
+            }
+            &-name {
+                font-size: 1.4rem;
+            }
         }
     }
     .project-road-item {
