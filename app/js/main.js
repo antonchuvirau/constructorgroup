@@ -9,7 +9,10 @@ function onHeroSliderBoxClickHandler(evt) {
 }
 
 function getSwiperSliderOffset() {
-    return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
+    if (window.innerWidth < 1681) {
+        return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
+    }
+    return ((window.innerWidth - CUSTOM_CONTAINER_WIDTH + 30) / 2).toFixed(2);
 }
 
 function updateServiceSectionTitlesHeight() {
