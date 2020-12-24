@@ -5486,6 +5486,8 @@ a {
     font-size: 2.8rem; }
     .box__title_s {
       font-size: 1.6rem; }
+      .box__title_s::after {
+        top: calc(100% + 12px); }
   .box__link {
     font-size: 1.6rem; }
   .footer-menu__link {

@@ -40,7 +40,7 @@ function updateServiceSectionTitlesHeight() {
 
 const CUSTOM_CONTAINER_WIDTH = 1410;
 const CONTAINER_WIDTH = .86;
-const CUSTOM_TITLE_STEP = 65;
+const CUSTOM_TITLE_STEP = 75;
 const CUSTOM_MOBILE_TITLE_STEP = 55;
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
