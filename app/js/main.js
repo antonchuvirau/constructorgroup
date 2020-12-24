@@ -16,7 +16,7 @@ function updateServiceSectionTitlesHeight() {
     const serviceSectionTitles = servicesSectionCarousel.querySelectorAll(`.box__title`);
     
     for (const serviceTitle of serviceSectionTitles) {
-        if (window.innerWidth < 992) {
+        if (window.innerWidth < 1171) {
             serviceTitle.parentElement.style.transform = `translateY(calc(100% - ${serviceTitle.offsetHeight + CUSTOM_MOBILE_TITLE_STEP}px))`;
         }
         else {
