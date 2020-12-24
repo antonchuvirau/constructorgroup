@@ -14,3 +14,196 @@
         }
     }
 }
+
+@media screen and (min-width: 1680px) {
+    .about-hero {
+        &__title {
+            font-size: 4rem;
+        }
+        &__text {
+            & p {
+                font-size: 3.2rem;
+            }
+        }
+        &__numbers {
+            &-value {
+                font-size: 4.4rem;
+            }
+            &-text {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .box {
+        &__content {
+            padding: 30px 35px;
+            &-note {
+                font-size: 1.6rem;
+            }
+            &-text {
+                & p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__title {
+            font-size: 2.8rem;
+        }
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .footer-menu {
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .hero-slider {
+        &__item {
+            &-link {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .lang {
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .news-item {
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .project-address {
+        &__title {
+            font-size: 2rem;
+        }
+        &__value {
+            font-size: 1.6rem;
+        }
+    }
+    .project-numbers {
+        &-value {
+            font-size: 4.2rem;
+        }
+        &-name {
+            font-size: 1.4rem;
+        }
+    }
+    .project-road-item {
+        &__number {
+            font-size: 1.6rem;
+        }
+    }
+    .project-team {
+        padding: 45px 50px;
+        &__title {
+            font-size: 2rem;
+        }
+        &__list {
+            &-item {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .video-item {
+        &__content {
+            &-date {
+                font-size: 1.6rem;
+            }
+            &-title {
+                font-size: 2.4rem;
+                &_upper {
+                    font-size: 3.2rem;
+                }
+            }
+            &-note {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .about-section {
+        &__title {
+            font-size: 3.6rem;
+            &-note {
+                font-size: 2rem;
+            }
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+        &__note {
+            font-size: 2rem;
+        }
+        &__content {
+            & p {
+                font-size: 1.6rem;
+                &:first-child {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__additional-content {
+            & p {
+                font-size: 1.6rem;
+                &:first-child {
+                    font-size: 2rem;
+                }
+            }
+            &-link {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .advantages-section {
+        &-name {
+            font-size: 1.6rem;
+        }
+    }
+    .footer {
+        &__tel-link {
+            font-size: 1.6rem;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+    .header {
+        &__tel-link {
+            font-size: 2rem;
+        }
+        &__menu-button {
+            font-size: 2rem;
+        }
+    }
+    .partner-section {
+        &__title {
+            font-size: 2.2rem;
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .project-description {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .text-section {
+        &__content {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

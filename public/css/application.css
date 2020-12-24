@@ -5466,3 +5466,93 @@ a {
 @media screen and (max-width: 1440px) {
   .hero-slider__item-name {
     font-size: 2.3rem; } }
+
+@media screen and (min-width: 1680px) {
+  .about-hero__title {
+    font-size: 4rem; }
+  .about-hero__text p {
+    font-size: 3.2rem; }
+  .about-hero__numbers-value {
+    font-size: 4.4rem; }
+  .about-hero__numbers-text {
+    font-size: 1.6rem; }
+  .box__content {
+    padding: 30px 35px; }
+    .box__content-note {
+      font-size: 1.6rem; }
+    .box__content-text p {
+      font-size: 1.6rem; }
+  .box__title {
+    font-size: 2.8rem; }
+  .box__link {
+    font-size: 1.6rem; }
+  .footer-menu__link {
+    font-size: 1.6rem; }
+  .hero-slider__item-link {
+    font-size: 1.8rem; }
+  .lang__link {
+    font-size: 1.6rem; }
+  .news-item__title {
+    font-size: 1.6rem; }
+  .news-item__text p {
+    font-size: 1.6rem; }
+  .project-address__title {
+    font-size: 2rem; }
+  .project-address__value {
+    font-size: 1.6rem; }
+  .project-numbers-value {
+    font-size: 4.2rem; }
+  .project-numbers-name {
+    font-size: 1.4rem; }
+  .project-road-item__number {
+    font-size: 1.6rem; }
+  .project-team {
+    padding: 45px 50px; }
+    .project-team__title {
+      font-size: 2rem; }
+    .project-team__list-item {
+      font-size: 1.6rem; }
+  .video-item__content-date {
+    font-size: 1.6rem; }
+  .video-item__content-title {
+    font-size: 2.4rem; }
+    .video-item__content-title_upper {
+      font-size: 3.2rem; }
+  .video-item__content-note {
+    font-size: 1.6rem; }
+  .about-section__title {
+    font-size: 3.6rem; }
+    .about-section__title-note {
+      font-size: 2rem; }
+  .about-section__text p {
+    font-size: 1.6rem; }
+  .about-section__note {
+    font-size: 2rem; }
+  .about-section__content p {
+    font-size: 1.6rem; }
+    .about-section__content p:first-child {
+      font-size: 1.8rem; }
+  .about-section__additional-content p {
+    font-size: 1.6rem; }
+    .about-section__additional-content p:first-child {
+      font-size: 2rem; }
+  .about-section__additional-content-link {
+    font-size: 1.6rem; }
+  .advantages-section-name {
+    font-size: 1.6rem; }
+  .footer__tel-link {
+    font-size: 1.6rem; }
+  .footer__text {
+    font-size: 1.4rem; }
+  .header__tel-link {
+    font-size: 2rem; }
+  .header__menu-button {
+    font-size: 2rem; }
+  .partner-section__title {
+    font-size: 2.2rem; }
+  .partner-section__text p {
+    font-size: 1.6rem; }
+  .project-description__title {
+    font-size: 3rem; }
+  .text-section__content p {
+    font-size: 1.6rem; } }
