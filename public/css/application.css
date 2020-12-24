@@ -4847,6 +4847,7 @@ a {
   .hero-slider__item {
     position: relative;
     height: 42.3vw;
+    max-height: 710px;
     -ms-flex-preferred-size: 120px;
         flex-basis: 120px;
     -webkit-transition: all .25s ease-in-out;

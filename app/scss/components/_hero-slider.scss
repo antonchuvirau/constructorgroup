@@ -3,6 +3,7 @@
     &__item {
         position: relative;
         height: 42.3vw;
+        max-height: 710px;
         flex-basis: 120px;
         transition: all .25s ease-in-out;
         overflow: hidden;
