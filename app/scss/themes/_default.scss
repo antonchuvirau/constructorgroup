@@ -164,8 +164,10 @@
         }
     }
     .advantages-section {
-        &-name {
-            font-size: 1.6rem;
+        &__col {
+            &-name {
+                font-size: 1.6rem;
+            }
         }
     }
     .footer {
