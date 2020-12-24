@@ -29,12 +29,18 @@ function updateServiceSectionTitlesHeight() {
     const serviceSectionTitles = servicesSectionCarousel.querySelectorAll(`.box__title`);
     
     for (const serviceTitle of serviceSectionTitles) {
-        serviceTitle.parentElement.style.transform = `translateY(calc(100% - ${serviceTitle.offsetHeight + CUSTOM_TITLE_STEP}px))`;
+        if (window.innerWidth < 992) {
+            serviceTitle.parentElement.style.transform = `translateY(calc(100% - ${serviceTitle.offsetHeight + CUSTOM_MOBILE_TITLE_STEP}px))`;
+        }
+        else {
+            serviceTitle.parentElement.style.transform = `translateY(calc(100% - ${serviceTitle.offsetHeight + CUSTOM_TITLE_STEP}px))`;
+        }
     }
 }
 
 const CONTAINER_WIDTH = .86;
 const CUSTOM_TITLE_STEP = 65;
+const CUSTOM_MOBILE_TITLE_STEP = 55;
 const utilsModule = window.utils;
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
