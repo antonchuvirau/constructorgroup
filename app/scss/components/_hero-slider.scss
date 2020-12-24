@@ -57,13 +57,16 @@
             z-index: 1;
         }
         &-icon {
+            width: 27.9762vw;
             max-width: 470px;
             margin: 0 auto;
         }
         &-link {
             display: inline-block;
             text-decoration: none;
-            font-size: 1.8rem;
+            // font-size: 1.8rem;
+            // Flexible font size
+            font-size: 1.0714vw;
             letter-spacing: .05em;
             margin-top: 20px;
             color: $white;

@@ -24,7 +24,9 @@
         transform-origin: 0 0;
         transform: translateY(calc(100% - 155px));
         transition: transform .25s ease-in-out;
-        padding: 30px 35px;
+        // padding: 30px 35px;
+        // Flexible padding
+        padding: 6.1404% 7.78%;
         z-index: 1;
         &_bigger {
             transform: translateY(calc(100% - 170px));
@@ -37,6 +39,8 @@
             text-transform: uppercase;
             color: $white;
             max-width: 245px;
+            // Flexible font size
+            font-size: .9524vw;
         }
         &-text {
             opacity: 0;
@@ -45,6 +49,8 @@
                 letter-spacing: .04em;
                 color: $dark;
                 line-height: 1.65;
+                // Flexible font size
+                font-size: .9524vw;
             }
         }
         &::after {
@@ -61,7 +67,9 @@
         }
     }
     &__title {
-        font-size: 2.8rem;
+        // Flexible font size
+        font-size: 1.67vw;
+        // font-size: 2.8rem;
         margin-bottom: 30px;
         color: $white;
         &_s {
@@ -79,6 +87,8 @@
         margin: 0;
         color: $dark;
         margin-top: 15px;
+        // Flexible font size
+        font-size: .9524vw;
     }
     &:hover {
         & .box {
