@@ -22,14 +22,14 @@
         bottom: 0;
         left: 0;
         transform-origin: 0 0;
-        transform: translateY(calc(100% - 9.2262vw));
+        transform: translateY(calc(100% - 10.119vw));
         transition: transform .25s ease-in-out;
         // padding: 30px 35px;
         // Flexible padding
         padding: 6.1404% 7.78%;
         z-index: 1;
         &_bigger {
-            transform: translateY(calc(100% - 10.1190vw));
+            transform: translateY(calc(100% - 11.3095vw));
         }
         &-note {
             margin: 0;
@@ -38,6 +38,7 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             color: $white;
+            width: 14.5833vw;
             max-width: 245px;
             // Flexible font size
             font-size: .9524vw;
