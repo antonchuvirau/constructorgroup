@@ -50,6 +50,10 @@
             font-size: .95238vw;
             letter-spacing: .04em;
             color: $white;
+            &_bigger {
+                // Flexible font size
+                font-size: 1.1905vw;
+            }
         }
         &-title {
             // font-size: 2.4rem;
@@ -57,10 +61,15 @@
             font-size: 1.4286vw;
             color: $white;
             margin-top: 5px;
+            letter-spacing: .1em;
             &_upper {
                 text-transform: uppercase;
                 margin-top: 20px;
                 // font-size: 3.2rem;
+                // Flexible font size
+                font-size: 1.9048vw;
+            }
+            &_bigger {
                 // Flexible font size
                 font-size: 1.9048vw;
             }
@@ -79,6 +88,10 @@
             letter-spacing: .1em;
             color: $white;
             text-transform: uppercase;
+            &_bigger {
+                // Flexible font size
+                font-size: 1.1905vw;
+            }
         }
     }
     &:hover {

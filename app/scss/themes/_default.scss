@@ -128,15 +128,24 @@
         &__content {
             &-date {
                 font-size: 1.6rem;
+                &_bigger {
+                    font-size: 2rem;
+                }
             }
             &-title {
                 font-size: 2.4rem;
                 &_upper {
                     font-size: 3.2rem;
                 }
+                &_bigger {
+                    font-size: 3.2rem;
+                }
             }
             &-note {
                 font-size: 1.6rem;
+                &_bigger {
+                    font-size: 2rem;
+                }
             }
         }
     }
