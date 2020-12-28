@@ -49,6 +49,18 @@ function onDocumentClickHandler(evt) {
         document.documentElement.classList.remove(`is-locked`);
     }
 }
+function initMap() {
+    const myMap = new ymaps.Map(mapBox, {
+        center: [55.76, 37.64],
+        zoom: 15,
+        controls: ['smallMapDefaultSet']
+    });
+    myMap.behaviors.disable(['scrollZoom', 'multiTouch']);
+    myPlacemarkWithContent = new ymaps.Placemark([55.76, 37.64], {
+        hintContent: 'Собственный значок метки с контентом',
+    }, {});
+    myMap.geoObjects.add(myPlacemarkWithContent)
+}
 
 // Constants
 const CUSTOM_CONTAINER_WIDTH = 1440;
@@ -69,6 +81,7 @@ const headerButtonMenuOpen = document.querySelector(`.header__menu-button`);
 const navigationElement = document.querySelector(`.navigation`);
 const container = document.querySelector(`.header`).querySelector(`.container`);
 const sliderBox = document.querySelector(`.slider__box`);
+const mapBox = document.querySelector(`#map`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -159,6 +172,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (sliderBox) {
         new Swiper(sliderBox, {});
+    }
+    if (mapBox) {
+        ymaps.ready(initMap);
     }
 });
 

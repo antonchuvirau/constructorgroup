@@ -23,19 +23,16 @@
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-3 header__col">
+                <div class="col-6 col-xl-3 header__col">
                     <a href="/" class="header__logo"><img class="header__logo-icon" src="img/logo.svg" alt="alt"></a>
                 </div>
-                <div class="col-9 header__col header__content">
-                    <a class="header__tel-link" href="tel:+74958990084">+7 (495) 899 00 84</a>
+                <div class="col-6 col-xl-9 header__col header__content">
+                    <a class="d-none d-xl-block header__tel-link" href="tel:+74958990084">+7 (495) 899 00 84</a>
                     <button type="button" class="header__menu-button">
-                        <svg class="header__menu-button-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="9.5"
-                            viewBox="0 0 27 9.5">
-                            <g transform="translate(-1432 -60)">
-                                <rect width="27" height="1.5" transform="translate(1432 60)" />
-                                <rect width="16" height="1.5" transform="translate(1432 68)" />
-                            </g>
-                        </svg>
+                        <svg class="header__menu-button-icon" width="27" height="9.5">
+                            <rect width="27" height="1.5"/>
+                            <rect width="16" height="1.5"/>
+                          </svg>                          
                         Меню
                     </button>
                 </div>
@@ -562,6 +559,29 @@
         </div>
     </footer>
     <!-- End footer -->
+    <!-- Begin menu -->
+    <div class="navigation">
+        <div class="navigation__wrapper">
+            <div class="navigation__section navigation__list">
+                <a href="#" class="navigation__list-link">О компании</a>
+                <a href="#" class="navigation__list-link">Проекты</a>
+                <a href="#" class="navigation__list-link">Новости</a>
+                <a href="#" class="navigation__list-link">Галерея</a>
+                <a href="#" class="navigation__list-link">Контакты</a>
+            </div>
+            <div class="navigation__section navigation__info">
+                <p>г. Москва<br>1-й Магистральный проезд д.11 стр.1<br>блок А, этаж 3, БЦ «Интерьер»</p>
+                <a href="tel:+74958990084"><span>Телефон</span><br>+7 (495) 899 00 84</a>
+            </div>
+            <div class="navigation__section navigation__options">
+                <div class="lang navigation__lang">
+                    <a name="Активный язык" class="lang__link">ru</a>
+                    <a href="#" class="lang__link">eng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End menu -->
     <!-- BEGIN scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
