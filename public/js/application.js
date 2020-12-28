@@ -21,11 +21,8 @@ function onHeroSliderBoxClickHandler(evt) {
     utilsModule.changeDOMCollectionClass(heroSliderTargetItem, heroSliderItems, `hero-slider__item_active`);
 }
 
-function getSwiperSliderOffset() {
-    if (window.innerWidth * CONTAINER_WIDTH >= 1440) {
-        return ((window.innerWidth - CUSTOM_CONTAINER_WIDTH + 30) / 2).toFixed(2);
-    }
-    return ((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2);
+function getContainerOffset() {
+    return ((window.innerWidth - container.offsetWidth+ 30) / 2).toFixed(2);
 }
 
 function updateServiceSectionTitlesHeight() {
@@ -73,6 +70,7 @@ const projectRoadCarousel = document.querySelector(`.project-road-section__carou
 const projectOnlineCarousel = document.querySelector(`.project-online-section__carousel`);
 const headerButtonMenuOpen = document.querySelector(`.header__menu-button`);
 const navigationElement = document.querySelector(`.navigation`);
+const container = document.querySelector(`.header`).querySelector(`.container`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -122,7 +120,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(projectVideoCarousel, {
             slidesPerView: `auto`,
             spaceBetween: 30,
-            slidesOffsetBefore: getSwiperSliderOffset(),
+            slidesOffsetBefore: getContainerOffset(),
             navigation: {
                 prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
@@ -156,14 +154,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (navigationElement) {
         const navigationSections = document.querySelectorAll(`.navigation__section`);
-        if (window.innerWidth * CONTAINER_WIDTH >= 1440) {
-            for (const section of navigationSections) {
-                section.style.paddingRight = `${((window.innerWidth - CUSTOM_CONTAINER_WIDTH + 30) / 2).toFixed(2)}px`;
-            }
-            return;
-        }
+
         for (const section of navigationSections) {
-            section.style.paddingRight = `${((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2)}px`;
+            section.style.paddingRight = `${getContainerOffset()}px`;
         }
     }
 });
@@ -176,6 +169,13 @@ window.addEventListener(`resize`, () => {
     }
     if (servicesSectionCarousel) {
         updateServiceSectionTitlesHeight();
+    }
+    if (navigationElement) {
+        const navigationSections = document.querySelectorAll(`.navigation__section`);
+
+        for (const section of navigationSections) {
+            section.style.paddingRight = `${getContainerOffset()}px`;
+        }
     }
 });
 

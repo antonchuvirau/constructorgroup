@@ -14,7 +14,279 @@
         }
     }
 }
-
+@media screen and (max-width: 1169px) {
+    .about-hero {
+        &__title {
+            font-size: 4rem;
+        }
+        &__text {
+            & p {
+                font-size: 3.2rem;
+            }
+        }
+        &__numbers {
+            &-value {
+                font-size: 4.4rem;
+            }
+            &-text {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .box {
+        &__content {
+            padding: 30px 35px;
+            transform: translateY(calc(100% - 170px));
+            &_bigger {
+                transform: translateY(calc(100% - 190px));
+            }
+            &-note {
+                font-size: 1.6rem;
+            }
+            &-text {
+                & p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__title {
+            font-size: 2.8rem;
+            &_s {
+                font-size: 1.6rem;
+                &::after {
+                    top: calc(100% + 12px);
+                }
+            }
+        }
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .footer-menu {
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .hero-slider {
+        &__item {
+            &-link {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .lang {
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .news-item {
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .project-address {
+        &__title {
+            font-size: 2rem;
+        }
+        &__value {
+            font-size: 1.6rem;
+        }
+    }
+    .project-numbers {
+        &__item {
+            &-value {
+                font-size: 4.2rem;
+            }
+            &-name {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .project-road-item {
+        &__number {
+            font-size: 1.6rem;
+        }
+    }
+    .project-team {
+        padding: 45px 50px;
+        &__title {
+            font-size: 2rem;
+        }
+        &__list {
+            &-item {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .video-item {
+        &__content {
+            &-date {
+                font-size: 1.6rem;
+                &_bigger {
+                    font-size: 2rem;
+                }
+            }
+            &-title {
+                font-size: 2.4rem;
+                &_upper {
+                    font-size: 3.2rem;
+                }
+                &_bigger {
+                    font-size: 3.2rem;
+                }
+            }
+            &-note {
+                font-size: 1.6rem;
+                &_bigger {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .about-section {
+        &__title {
+            font-size: 3.6rem;
+            &-note {
+                font-size: 2rem;
+            }
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+        &__note {
+            font-size: 2rem;
+        }
+        &__content {
+            & p {
+                font-size: 1.6rem;
+                &:first-child {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__additional-content {
+            & p {
+                font-size: 1.6rem;
+                &:first-child {
+                    font-size: 2rem;
+                }
+            }
+            &-link {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .advantages-section {
+        &__col {
+            &-name {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .footer {
+        &__tel-link {
+            font-size: 1.6rem;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__menu {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        &__links {
+            margin-left: 0;
+        }
+        &__dev {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    .header {
+        &__tel-link {
+            font-size: 2rem;
+        }
+        &__menu-button {
+            font-size: 2rem;
+        }
+        &__logo {
+            &-icon {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    }
+    .partner-section {
+        &__title {
+            font-size: 2.2rem;
+        }
+        &__text {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .project-description {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .text-section {
+        &__content {
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 25px 0;
+        &__logo {
+            &-icon {
+                max-width: 140px;
+            }
+        }
+        &__menu {
+            &-button {
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                font-size: 0;
+                background: image('navigation.svg') no-repeat 50% / 23px auto;
+                &-icon {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navigation {
+        width: 100%;
+        padding-top: 80px;
+        &__wrapper {
+            width: 100%;
+        }
+        &__list {
+            padding: 35px 0;
+        }
+    }
+}
 @media screen and (min-width: 1680px) {
     .about-hero {
         &__title {
@@ -205,6 +477,11 @@
         }
         &__menu-button {
             font-size: 2rem;
+        }
+        &__logo {
+            &-icon {
+                width: 100%;
+            }
         }
     }
     .partner-section {

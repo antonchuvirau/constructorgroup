@@ -5070,7 +5070,7 @@ a {
   padding: 45px 0;
   z-index: 11; }
   .header__logo {
-    display: inline-block; }
+    display: block; }
     .header__logo-icon {
       max-width: 290px;
       width: 17.2619vw; }
@@ -6300,7 +6300,10 @@ a {
   z-index: 10; }
   .navigation__wrapper {
     position: relative;
-    width: 550px; }
+    width: 550px;
+    height: 100%;
+    max-height: 100%;
+    overflow: auto; }
   .navigation_open {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
@@ -6369,6 +6372,157 @@ a {
 @media screen and (max-width: 1440px) {
   .hero-slider__item-name {
     font-size: 2.3rem; } }
+
+@media screen and (max-width: 1169px) {
+  .about-hero__title {
+    font-size: 4rem; }
+  .about-hero__text p {
+    font-size: 3.2rem; }
+  .about-hero__numbers-value {
+    font-size: 4.4rem; }
+  .about-hero__numbers-text {
+    font-size: 1.6rem; }
+  .box__content {
+    padding: 30px 35px;
+    -webkit-transform: translateY(calc(100% - 170px));
+        -ms-transform: translateY(calc(100% - 170px));
+            transform: translateY(calc(100% - 170px)); }
+    .box__content_bigger {
+      -webkit-transform: translateY(calc(100% - 190px));
+          -ms-transform: translateY(calc(100% - 190px));
+              transform: translateY(calc(100% - 190px)); }
+    .box__content-note {
+      font-size: 1.6rem; }
+    .box__content-text p {
+      font-size: 1.6rem; }
+  .box__title {
+    font-size: 2.8rem; }
+    .box__title_s {
+      font-size: 1.6rem; }
+      .box__title_s::after {
+        top: calc(100% + 12px); }
+  .box__link {
+    font-size: 1.6rem; }
+  .footer-menu__link {
+    font-size: 1.6rem; }
+  .hero-slider__item-link {
+    font-size: 1.8rem; }
+  .lang__link {
+    font-size: 1.6rem; }
+  .news-item__title {
+    font-size: 1.6rem; }
+  .news-item__text p {
+    font-size: 1.6rem; }
+  .project-address__title {
+    font-size: 2rem; }
+  .project-address__value {
+    font-size: 1.6rem; }
+  .project-numbers__item-value {
+    font-size: 4.2rem; }
+  .project-numbers__item-name {
+    font-size: 1.4rem; }
+  .project-road-item__number {
+    font-size: 1.6rem; }
+  .project-team {
+    padding: 45px 50px; }
+    .project-team__title {
+      font-size: 2rem; }
+    .project-team__list-item {
+      font-size: 1.6rem; }
+  .video-item__content-date {
+    font-size: 1.6rem; }
+    .video-item__content-date_bigger {
+      font-size: 2rem; }
+  .video-item__content-title {
+    font-size: 2.4rem; }
+    .video-item__content-title_upper {
+      font-size: 3.2rem; }
+    .video-item__content-title_bigger {
+      font-size: 3.2rem; }
+  .video-item__content-note {
+    font-size: 1.6rem; }
+    .video-item__content-note_bigger {
+      font-size: 2rem; }
+  .about-section__title {
+    font-size: 3.6rem; }
+    .about-section__title-note {
+      font-size: 2rem; }
+  .about-section__text p {
+    font-size: 1.6rem; }
+  .about-section__note {
+    font-size: 2rem; }
+  .about-section__content p {
+    font-size: 1.6rem; }
+    .about-section__content p:first-child {
+      font-size: 1.8rem; }
+  .about-section__additional-content p {
+    font-size: 1.6rem; }
+    .about-section__additional-content p:first-child {
+      font-size: 2rem; }
+  .about-section__additional-content-link {
+    font-size: 1.6rem; }
+  .advantages-section__col-name {
+    font-size: 1.6rem; }
+  .footer__tel-link {
+    font-size: 1.6rem; }
+  .footer__text {
+    font-size: 1.4rem; }
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px; }
+    .footer__wrapper:last-child {
+      margin-bottom: 0; }
+  .footer__menu {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px; }
+  .footer__links {
+    margin-left: 0; }
+  .footer__dev {
+    margin-left: 0;
+    margin-top: 10px; }
+  .header__tel-link {
+    font-size: 2rem; }
+  .header__menu-button {
+    font-size: 2rem; }
+  .header__logo-icon {
+    width: 100%;
+    max-width: 200px; }
+  .partner-section__title {
+    font-size: 2.2rem; }
+  .partner-section__text p {
+    font-size: 1.6rem; }
+  .project-description__title {
+    font-size: 3rem; }
+  .text-section__content p {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 25px 0; }
+    .header__logo-icon {
+      max-width: 140px; }
+    .header__menu-button {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      font-size: 0;
+      background: url("../img/navigation.svg") no-repeat 50%/23px auto; }
+      .header__menu-button-icon {
+        display: none; }
+  .navigation {
+    width: 100%;
+    padding-top: 80px; }
+    .navigation__wrapper {
+      width: 100%; }
+    .navigation__list {
+      padding: 35px 0; } }
 
 @media screen and (min-width: 1680px) {
   .about-hero__title {
@@ -6468,6 +6622,8 @@ a {
     font-size: 2rem; }
   .header__menu-button {
     font-size: 2rem; }
+  .header__logo-icon {
+    width: 100%; }
   .partner-section__title {
     font-size: 2.2rem; }
   .partner-section__text p {
