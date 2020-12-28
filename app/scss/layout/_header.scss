@@ -1,5 +1,7 @@
 .header {
+    position: relative;
     padding: 45px 0;
+    z-index: 11;
     &__logo {
         display: inline-block;
         &-icon {
@@ -36,14 +38,23 @@
             top: 50%;
             left: 0;
             transform: translateY(-50%);
+            pointer-events: none;
             & rect {
                 transition: transform .25s ease;
+                will-change: transform;
                 &:last-child {
                     transform: translate3d(0, 8px, 0);
                 }
             }
         }
         &:hover {
+            & rect {
+                &:last-child {
+                    transform: translate3d(11px, 8px, 0);
+                }
+            }
+        }
+        &_active {
             & rect {
                 &:last-child {
                     transform: translate3d(11px, 8px, 0);

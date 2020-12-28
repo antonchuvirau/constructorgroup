@@ -41,11 +41,29 @@ function updateServiceSectionTitlesHeight() {
     }
 }
 
+function onDocumentClickHandler(evt) {
+    const target = evt.target;
+
+    if (target.matches(`.header__menu-button`)) {
+        headerButtonMenuOpen.classList.toggle(`header__menu-button_active`);
+        navigationElement.classList.toggle(`navigation_open`);
+        document.documentElement.classList.toggle(`is-locked`);
+    }
+    if (!target.matches(`.header__menu-button`) && navigationElement.classList.contains(`navigation_open`) && !navigationElement.contains(target)) {
+        headerButtonMenuOpen.classList.remove(`header__menu-button_active`);
+        navigationElement.classList.remove(`navigation_open`);
+        document.documentElement.classList.remove(`is-locked`);
+    }
+}
+
+// Constants
 const CUSTOM_CONTAINER_WIDTH = 1440;
 const CONTAINER_WIDTH = .86;
 const CUSTOM_TITLE_STEP = 75;
 const CUSTOM_MOBILE_TITLE_STEP = 55;
+// Modules
 const utilsModule = window.utils;
+// Variables
 const heroSliderBox = document.querySelector(`.hero-slider`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
 const servicesSectionCarousel = document.querySelector(`.services-section__carousel`);
@@ -53,6 +71,8 @@ const projectHeroSliderBox = document.querySelector(`.project-hero-slider__box`)
 const projectVideoCarousel = document.querySelector(`.project-video-section__carousel`);
 const projectRoadCarousel = document.querySelector(`.project-road-section__carousel`);
 const projectOnlineCarousel = document.querySelector(`.project-online-section__carousel`);
+const headerButtonMenuOpen = document.querySelector(`.header__menu-button`);
+const navigationElement = document.querySelector(`.navigation`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -134,7 +154,21 @@ document.addEventListener(`DOMContentLoaded`, () => {
             }
         });
     }
+    if (navigationElement) {
+        const navigationSections = document.querySelectorAll(`.navigation__section`);
+        if (window.innerWidth * CONTAINER_WIDTH >= 1440) {
+            for (const section of navigationSections) {
+                section.style.paddingRight = `${((window.innerWidth - CUSTOM_CONTAINER_WIDTH + 30) / 2).toFixed(2)}px`;
+            }
+            return;
+        }
+        for (const section of navigationSections) {
+            section.style.paddingRight = `${((window.innerWidth - (window.innerWidth * CONTAINER_WIDTH) + 30) / 2).toFixed(2)}px`;
+        }
+    }
 });
+
+document.addEventListener(`click`, onDocumentClickHandler);
 
 window.addEventListener(`resize`, () => {
     if (projectVideoCarousel) {
