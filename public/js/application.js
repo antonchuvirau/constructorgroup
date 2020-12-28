@@ -51,13 +51,13 @@ function onDocumentClickHandler(evt) {
 }
 function initMap() {
     const myMap = new ymaps.Map(mapBox, {
-        center: [55.76, 37.64],
-        zoom: 15,
+        center: [55.765676, 37.525235],
+        zoom: 17,
         controls: ['smallMapDefaultSet']
     });
     myMap.behaviors.disable(['scrollZoom', 'multiTouch']);
-    myPlacemarkWithContent = new ymaps.Placemark([55.76, 37.64], {
-        hintContent: 'Собственный значок метки с контентом',
+    myPlacemarkWithContent = new ymaps.Placemark([55.765676, 37.525235], {
+        hintContent: 'ООО “КОНСТРУКТОР групп” - Генеральный Подрядчик',
     }, {});
     myMap.geoObjects.add(myPlacemarkWithContent)
 }

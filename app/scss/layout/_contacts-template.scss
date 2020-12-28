@@ -1,7 +1,33 @@
 .contacts-template {
     border-top: 1px solid rgba($black, .2);
+    padding-bottom: 0;
+    &__grid {
+        padding: 45px 0;
+        padding-bottom: 75px;
+    }
     &__map {
         width: 100%;
         height: 44.6429vw;
+    }
+    &__form {
+        margin-top: 20px;
+    }
+    &__info {
+        margin-top: 30px;
+        & p {
+            font-size: 1.6rem;
+            line-height: 1.65;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        & a {
+            text-decoration: none;
+            color: $black;
+            &:hover {
+                color: $black-300;
+            }
+        }
     }
 }

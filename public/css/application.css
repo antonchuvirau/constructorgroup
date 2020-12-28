@@ -5566,10 +5566,49 @@ a {
     stroke: #F5BD38; }
 
 .contacts-template {
-  border-top: 1px solid rgba(68, 68, 68, 0.2); }
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+  padding-bottom: 0; }
+  .contacts-template__grid {
+    padding: 45px 0;
+    padding-bottom: 75px; }
   .contacts-template__map {
     width: 100%;
     height: 44.6429vw; }
+  .contacts-template__form {
+    margin-top: 20px; }
+  .contacts-template__info {
+    margin-top: 30px; }
+    .contacts-template__info p {
+      font-size: 1.6rem;
+      line-height: 1.65;
+      margin-bottom: 25px; }
+      .contacts-template__info p:last-child {
+        margin-bottom: 0; }
+    .contacts-template__info a {
+      text-decoration: none;
+      color: #444; }
+      .contacts-template__info a:hover {
+        color: #707070; }
+
+.button {
+  display: inline-block;
+  padding: 0 70px;
+  height: 60px;
+  border-radius: 3px;
+  background: #F5BD38;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .button:hover {
+    background: #f4b520; }
+  .button:active {
+    background: #eeab0c; }
+  .button:disabled {
+    pointer-events: none;
+    opacity: .5; }
 
 .footer-menu {
   display: -webkit-box;
@@ -6418,6 +6457,63 @@ a {
     margin-top: 10px; }
   .slider__item-img {
     width: 100%; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-bottom: 20px; }
+
+.form__label {
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+.form__col {
+  width: 100%;
+  margin-right: 30px;
+  position: relative; }
+  .form__col:last-child {
+    margin-right: 0; }
+  .form__col_m {
+    width: calc((100% - 30px)/2); }
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background: #efefef;
+  padding: 0 20px;
+  color: #222; }
+  .form__input:focus {
+    background: #f2f2f2; }
+
+.form__textarea {
+  height: 90px;
+  display: block;
+  padding: 15px 20px; }
+
+.form__error-label {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 2px;
+  font-size: 1.1rem;
+  color: red; }
+
+.form__button {
+  margin-top: 20px; }
 
 @media screen and (min-width: 1200px) {
   .container {

@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    padding: 0 70px;
+    height: 60px;
+    border-radius: 3px;
+    background: $primary;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background: darken($primary, 5%);
+    }
+    &:active {
+        background: darken($primary, 10%);
+    }
+    &:disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+}
