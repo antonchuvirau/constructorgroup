@@ -5109,6 +5109,18 @@ a {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
+      .header__menu-button-icon rect {
+        -webkit-transition: -webkit-transform .25s ease;
+        transition: -webkit-transform .25s ease;
+        -o-transition: transform .25s ease;
+        transition: transform .25s ease;
+        transition: transform .25s ease, -webkit-transform .25s ease; }
+        .header__menu-button-icon rect:last-child {
+          -webkit-transform: translate3d(0, 8px, 0);
+                  transform: translate3d(0, 8px, 0); }
+    .header__menu-button:hover rect:last-child {
+      -webkit-transform: translate3d(11px, 8px, 0);
+              transform: translate3d(11px, 8px, 0); }
 
 .footer {
   border-top: 1px solid rgba(112, 112, 112, 0.2);

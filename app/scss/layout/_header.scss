@@ -36,6 +36,19 @@
             top: 50%;
             left: 0;
             transform: translateY(-50%);
+            & rect {
+                transition: transform .25s ease;
+                &:last-child {
+                    transform: translate3d(0, 8px, 0);
+                }
+            }
+        }
+        &:hover {
+            & rect {
+                &:last-child {
+                    transform: translate3d(11px, 8px, 0);
+                }
+            }
         }
     }
 }
