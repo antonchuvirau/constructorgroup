@@ -1,10 +1,9 @@
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: 86%;
         max-width: 1440px;
     }
 }
-
 @media screen and (max-width: 1440px) {
     .hero-slider {
         &__item {
@@ -14,7 +13,7 @@
         }
     }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
     .about-hero {
         &__title {
             font-size: 4rem;
@@ -69,8 +68,17 @@
     }
     .hero-slider {
         &__item {
+            flex-basis: 90px;
+            &_active {
+                flex-basis: 100%;
+            }
             &-link {
+                font-size: 1.6rem;
+            }
+            &-name {
                 font-size: 1.8rem;
+                left: 28px;
+                top: calc(100% - 30px);
             }
         }
     }
@@ -195,6 +203,8 @@
             font-size: 1.6rem;
         }
         &__text {
+            text-align: center;
+            width: 100%;
             font-size: 1.4rem;
         }
         &__wrapper {
@@ -254,6 +264,14 @@
             }
         }
     }
+    .media-section {
+        &__col {
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 @media screen and (max-width: 991px) {
     .header {
@@ -284,6 +302,43 @@
         }
         &__list {
             padding: 35px 0;
+        }
+    }
+    .slider {
+        &__item {
+            &-link {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .footer {
+        padding: 25px 0;
+        padding-bottom: 30px;
+        &-menu {
+            &__link {
+                font-size: .9rem;
+            }
+            &__item {
+                margin-right: 25px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__tel-link {
+            font-size: 1.2rem;
+            margin-right: 20px;
+        }
+        &__lang {
+            margin-right: 20px;
+            & .lang {
+                &__link {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        &__text {
+            font-size: 1rem;
         }
     }
 }

@@ -41,7 +41,7 @@
     </header>
     <!-- End header -->
     <!-- Begin slider -->
-    <div class="hero-slider">
+    <div class="d-none d-md-flex hero-slider">
         <div class="hero-slider__item hero-slider__item_active">
             <img class="hero-slider__item-img" src="img/hero-slider@2x.jpg" alt="alt">
             <p class="hero-slider__item-name">Fairmont & Vesper</p>
@@ -68,15 +68,30 @@
         </div>
     </div>
     <!-- End slider -->
+    <!-- Begin mobile slider -->
+    <div class="d-md-none slider">
+        <div class="slider__box swiper-container">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide slider__item">
+                    <img class="slider__item-img" src="img/slider@2x.jpg" alt="alt">
+                    <div class="slider__item-content">
+                        <img class="slider__item-icon" src="img/hero-slider-icon@2x.png" alt="alt">
+                        <p class="slider__item-link">Перейти в проект</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End mobile slider -->
     <!-- Begin main -->
     <main class="main">
         <section class="about-section main__about-section">
-            <div class="about-section__img">
+            <div class="d-none d-xl-block about-section__img">
                 <img src="img/about-section.jpg" alt="alt">
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-4 about-section__col">
+                    <div class="col-12 col-xl-4 about-section__col">
                         <h1 class="title title_l line about-section__title">Constructor<span class="title__note about-section__title-note">group</span></h1>
                         <p class="about-section__note">Генеральный подрядчик</p>
                         <a href="/about.html" class="link about-section__link">
@@ -91,7 +106,7 @@
                             </svg>                              
                         </a>
                     </div>
-                    <div class="col-4 about-section__col about-section__text">
+                    <div class="col-12 col-xl-4 about-section__col about-section__text">
                         <p>Компания специализируется на генеральном подряде, высотном строительстве, реконструкции зданий и сооружений любой сложности.</p>
                         <p>Компания специализируется на генеральном подряде, высотном строительстве, реконструкции зданий и сооружений любой сложности.</p>
                         <p>Наши дома стали настоящими украшениями центра Москвы и желанными формами в объективах камер профессионалов и любителей.</p>
@@ -279,7 +294,7 @@
         <section class="section media-section main__media-section">
             <div class="container">
                 <div class="row align-items-stretch">
-                    <div class="col-6 media-section__col">
+                    <div class="col-12 col-xl-6 media-section__col">
                         <header class="section__header"><h3 class="title section__title media-section__title">Новости</h3></header>
                         <div class="section__grid row news-section">
                             <div class="col-6 news-section__col">
@@ -304,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 media-section__col">
+                    <div class="col-12 col-xl-6 media-section__col">
                         <header class="section__header"><h3 class="title section__title media-section__title">Видео</h3></header>
                         <div class="section__grid video-section">
                             <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-item video-section__item">

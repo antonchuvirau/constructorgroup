@@ -7,11 +7,9 @@ function onHeroSliderBoxClickHandler(evt) {
 
     utilsModule.changeDOMCollectionClass(heroSliderTargetItem, heroSliderItems, `hero-slider__item_active`);
 }
-
 function getContainerOffset() {
     return ((window.innerWidth - container.offsetWidth+ 30) / 2).toFixed(2);
 }
-
 function updateServiceSectionTitlesHeight() {
     const serviceSectionTitles = servicesSectionCarousel.querySelectorAll(`.box__title`);
     
@@ -24,7 +22,6 @@ function updateServiceSectionTitlesHeight() {
         }
     }
 }
-
 function onDocumentClickHandler(evt) {
     const target = evt.target;
 
@@ -58,6 +55,7 @@ const projectOnlineCarousel = document.querySelector(`.project-online-section__c
 const headerButtonMenuOpen = document.querySelector(`.header__menu-button`);
 const navigationElement = document.querySelector(`.navigation`);
 const container = document.querySelector(`.header`).querySelector(`.container`);
+const sliderBox = document.querySelector(`.slider__box`);
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (projectsSectionCarousel) {
@@ -145,6 +143,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
         for (const section of navigationSections) {
             section.style.paddingRight = `${getContainerOffset()}px`;
         }
+    }
+    if (sliderBox) {
+        new Swiper(sliderBox, {});
     }
 });
 

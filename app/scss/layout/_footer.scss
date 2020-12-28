@@ -12,6 +12,11 @@
         @include flex();
         margin-left: auto;
     }
+    &__social-link {
+        width: 18px;
+        height: 18px;
+        display: block;
+    }
     &__tel-link {
         text-decoration: none;
         color: $black;
