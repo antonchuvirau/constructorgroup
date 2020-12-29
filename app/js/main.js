@@ -78,6 +78,17 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectsSectionCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
             }
         });
     }

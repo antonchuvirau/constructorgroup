@@ -1,15 +1,15 @@
 .section {
     position: relative;
     &__header {
-        position: relative;
+        @include flex(row, center);
         margin-bottom: 30px;
+        &-link {
+            margin-left: auto;
+        }
     }
     &__navigation {
         @include flex(row, center);
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-left: auto;
         &-button {
             @include flex(row, center, center);
             width: 35px;
@@ -24,7 +24,8 @@
                 }
             }
             &.swiper-button-disabled {
-                opacity: 0;
+                opacity: .5;
+                pointer-events: none;
             }
         }
     }
