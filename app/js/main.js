@@ -79,6 +79,13 @@ const counterBox = document.querySelector(`.counter`);
 let isCounterCompleted = false;
 
 document.addEventListener(`DOMContentLoaded`, () => {
+    // Инициализация AOS
+    AOS.init({
+        offset: 100,
+        duration: 700,
+        easing: 'ease-in-sine',
+        delay: 100
+    });
     if (counterBox) {
         const counterBoxBoundingClientRect = counterBox.getBoundingClientRect();
         const counterBoxOffsetTop = counterBoxBoundingClientRect.top;
