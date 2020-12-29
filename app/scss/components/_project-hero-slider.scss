@@ -22,14 +22,14 @@
         }
     }
     &__pagination {
-        bottom: 30px;
+        bottom: 25px;
         & .swiper-pagination-bullet {
             &::after {
-                background: rgba($white, .5);
+                background: $black-100;
             }
             &-active {
                 &::after {
-                    background: $white;
+                    background: $primary;
                 }
             }
         }

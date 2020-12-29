@@ -143,6 +143,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
             navigation: {
                 prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
+            },
+            breakpoints: {
+                320: {
+                    spaceBetween: 20
+                },
+                992: {
+                    spaceBetween: 30
+                }
             }
         });
     }
@@ -193,7 +201,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
         }
     }
     if (sliderBox) {
-        new Swiper(sliderBox, {});
+        new Swiper(sliderBox, {
+            autoplay: {
+                delay: 3500
+            },
+            pagination: {
+                el: sliderBox.closest(`.slider`).querySelector(`.slider__pagination`)
+            }
+        });
     }
     if (mapBox) {
         ymaps.ready(initMap);
