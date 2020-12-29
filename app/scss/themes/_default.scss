@@ -115,7 +115,6 @@
         }
         &__img {
             height: 59.42vw;
-            max-height: none;
         }
     }
     .project-address {
@@ -342,6 +341,29 @@
     .services-section {
         &__item {
             height: 420px;
+        }
+    }
+    .article-template {
+        &__content {
+            &-date {
+                font-size: 1.6rem;
+            }
+            &-title {
+                font-size: 2rem;
+            }
+            &-text {
+                & p {
+                    font-size: 1.6rem;
+                }
+                & a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__options {
+            &-link {
+                font-size: 1.6rem;
+            }
         }
     }
 }
@@ -887,6 +909,37 @@
             }
         }
     }
+    .news-template {
+        &__grid {
+            padding: 30px 0;
+            padding-bottom: 0;
+        }
+        &__col {
+            margin-bottom: 30px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    .article-template {
+        &__grid {
+            padding: 30px 0;
+        }
+        &__content {
+            margin-top: 30px;
+            &-date {
+                font-size: 1.2rem;
+            }
+            &-text {
+                & p, a {
+                    font-size: 1.3rem;
+                }
+            }
+            &-title {
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .section {
@@ -952,6 +1005,11 @@
     .about-section {
         &__additional-content {
             padding: 30px 15px;
+        }
+    }
+    .news-item {
+        &__img {
+            max-height: none;
         }
     }
 }
@@ -1170,6 +1228,29 @@
     .text-section {
         &__content {
             & p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .article-template {
+        &__content {
+            &-date {
+                font-size: 1.6rem;
+            }
+            &-title {
+                font-size: 2rem;
+            }
+            &-text {
+                & p {
+                    font-size: 1.6rem;
+                }
+                & a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__options {
+            &-link {
                 font-size: 1.6rem;
             }
         }
