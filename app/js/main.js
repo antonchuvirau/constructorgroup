@@ -48,8 +48,14 @@ function initMap() {
     }, {});
     myMap.geoObjects.add(myPlacemarkWithContent)
 }
+function count(options) {
+    var $this = $(this);
+    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+    $this.countTo(options);
+}
 
 // Constants
+const CUSTOM_STEP = 50;
 const CUSTOM_CONTAINER_WIDTH = 1440;
 const CONTAINER_WIDTH = .86;
 const CUSTOM_TITLE_STEP = 75;
@@ -69,8 +75,21 @@ const navigationElement = document.querySelector(`.navigation`);
 const container = document.querySelector(`.header`).querySelector(`.container`);
 const sliderBox = document.querySelector(`.slider__box`);
 const mapBox = document.querySelector(`#map`);
+const counterBox = document.querySelector(`.counter`);
+let isCounterCompleted = false;
 
 document.addEventListener(`DOMContentLoaded`, () => {
+    if (counterBox) {
+        const counterBoxBoundingClientRect = counterBox.getBoundingClientRect();
+        const counterBoxOffsetTop = counterBoxBoundingClientRect.top;
+        const windowHeight = window.innerHeight;
+
+        if (counterBoxOffsetTop < windowHeight && !isCounterCompleted) {
+            // start all the timers
+            $('.timer').each(count);
+            isCounterCompleted = true;
+        }
+    }
     if (projectsSectionCarousel) {
         new Swiper(projectsSectionCarousel, {
             slidesPerView: 3,
@@ -216,6 +235,23 @@ window.addEventListener(`resize`, () => {
 
         for (const section of navigationSections) {
             section.style.paddingRight = `${getContainerOffset()}px`;
+        }
+    }
+});
+
+window.addEventListener(`scroll`, () => {
+    if (counterBox) {
+        const counterBoxBoundingClientRect = counterBox.getBoundingClientRect();
+        const counterBoxOffsetTop = counterBoxBoundingClientRect.top;
+        const windowHeight = window.innerHeight;
+
+        if (windowHeight > (counterBoxOffsetTop + CUSTOM_STEP) && !isCounterCompleted) {
+            // start all the timers
+            $('.timer').each(count);
+            isCounterCompleted = true;
+        }
+        else if (windowHeight < (counterBoxOffsetTop + CUSTOM_STEP) && isCounterCompleted) {
+            isCounterCompleted = false;
         }
     }
 });
