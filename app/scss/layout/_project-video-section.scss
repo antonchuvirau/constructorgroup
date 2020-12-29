@@ -9,4 +9,7 @@
             max-height: 595px;
         }
     }
+    &__header {
+        @include flex();
+    }
 }
