@@ -5619,6 +5619,7 @@ a {
     .contacts-template__info p {
       font-size: 1.6rem;
       line-height: 1.65;
+      margin: 0;
       margin-bottom: 25px; }
       .contacts-template__info p:last-child {
         margin-bottom: 0; }
@@ -6150,6 +6151,7 @@ a {
         flex-wrap: no-wrap;
     margin-top: 30px; }
     .about-hero__numbers-item {
+      margin: 0;
       margin-right: 65px; }
     .about-hero__numbers-value {
       display: block;
@@ -6566,6 +6568,7 @@ a {
 
 @media screen and (max-width: 1199px) {
   .about-hero__title {
+    width: 100%;
     font-size: 4rem; }
   .about-hero__text p {
     font-size: 3.2rem; }
@@ -6573,6 +6576,13 @@ a {
     font-size: 4.4rem; }
   .about-hero__numbers-text {
     font-size: 1.6rem; }
+  .about-hero__numbers-item {
+    margin-right: 45px; }
+    .about-hero__numbers-item:last-child {
+      margin-right: 0; }
+  .about-hero__grid {
+    padding: 50px 0;
+    height: 750px; }
   .box__content {
     padding: 30px 35px;
     -webkit-transform: translateY(calc(100% - 160px));
@@ -6670,7 +6680,8 @@ a {
     .about-section__col:last-child {
       margin-bottom: 0; }
   .advantages-section__col-name {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    width: 100%; }
   .footer__tel-link {
     font-size: 1.6rem; }
   .footer__text {
@@ -6727,7 +6738,9 @@ a {
   .projects-list__item {
     height: 470px; }
   .project-video-section__carousel-item {
-    height: 450px; } }
+    height: 450px; }
+  .services-section__item {
+    height: 420px; } }
 
 @media screen and (max-width: 991px) {
   .header {
@@ -6771,6 +6784,14 @@ a {
       font-size: 1rem; }
   .projects-section__item {
     height: 470px; }
+  .title {
+    font-size: 1.8rem; }
+    .title_l {
+      font-size: 2.4rem; }
+      .title_l::after {
+        width: 75px; }
+    .title__note {
+      font-size: 1.4rem; }
   .box__content {
     padding: 30px;
     -webkit-transform: translateY(calc(100% - 130px));
@@ -6787,16 +6808,10 @@ a {
       font-size: 1.2rem; }
   .box__title {
     font-size: 2rem; }
+    .box__title_s {
+      font-size: 1.6rem; }
   .box__link {
     font-size: 1.2rem; }
-  .title {
-    font-size: 1.8rem; }
-    .title_l {
-      font-size: 2.4rem; }
-      .title_l::after {
-        width: 75px; }
-    .title__note {
-      font-size: 1.4rem; }
   .section__navigation {
     top: 8px; }
   .section__header {
@@ -6966,7 +6981,100 @@ a {
   .project-road-item__number {
     font-size: 1.2rem;
     bottom: 10px;
-    right: 15px; } }
+    right: 15px; }
+  .contacts-template__grid {
+    padding: 30px 0; }
+  .contacts-template__col {
+    margin-bottom: 30px; }
+    .contacts-template__col:last-child {
+      margin-bottom: 0; }
+  .contacts-template__info {
+    margin-top: 20px; }
+    .contacts-template__info p {
+      font-size: 1.3rem;
+      margin-bottom: 20px; }
+      .contacts-template__info p:last-child {
+        margin-bottom: 0; }
+  .form__label {
+    font-size: 1.3rem; }
+  .form__error-label {
+    font-size: 1rem; }
+  .form__button {
+    margin-top: 5px; }
+  .form__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .form__col {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px; }
+    .form__col:last-child {
+      margin-bottom: 0; }
+  .button {
+    font-size: 1.6rem;
+    height: 50px;
+    padding: 0 55px; }
+  .template__about-section {
+    margin: 0; }
+  .template__advantages-section {
+    margin: 0; }
+  .template__services-section {
+    margin: 0;
+    padding: 30px 0; }
+  .template__partner-section {
+    margin: 0; }
+  .about-section {
+    padding: 30px 0; }
+    .about-section__additional-content {
+      position: relative;
+      padding: 30px calc((100% - 690px)/2);
+      width: 100%;
+      top: auto;
+      margin-top: 30px; }
+      .about-section__additional-content-link {
+        font-size: 1.3rem; }
+      .about-section__additional-content p {
+        margin-bottom: 20px;
+        font-size: 1.3rem; }
+        .about-section__additional-content p:first-child {
+          font-size: 1.8rem; }
+    .about-section__content {
+      margin-top: 20px;
+      padding-right: 0; }
+      .about-section__content p {
+        font-size: 1.3rem;
+        margin-bottom: 20px; }
+        .about-section__content p:last-child {
+          margin-bottom: 0; }
+        .about-section__content p:first-child {
+          font-size: 1.4rem; }
+  .advantages-section {
+    padding: 30px 0; }
+    .advantages-section__col-icon {
+      max-width: 40px; }
+    .advantages-section__col-name {
+      font-size: 1.2rem;
+      line-height: 1.45;
+      max-width: 220px; }
+  .partner-section__title {
+    font-size: 1.8rem; }
+  .partner-section__text p {
+    font-size: 1.3rem; }
+  .about-hero__title {
+    font-size: 2rem; }
+  .about-hero__grid {
+    padding: 30px 0;
+    height: 350px; }
+  .about-hero__text p {
+    font-size: 1.6rem; }
+  .about-hero__numbers {
+    margin-top: 20px; }
+    .about-hero__numbers-value {
+      font-size: 2.5rem; }
+    .about-hero__numbers-text {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 767px) {
   .section__header {
@@ -6988,14 +7096,26 @@ a {
       .projects-section__navigation button[data-direction="next"], .projects-section__navigation select[data-direction="next"], .projects-section__navigation input[data-direction="next"], .projects-section__navigation textarea[data-direction="next"] {
         right: 30px; }
       .projects-section__navigation button[data-direction="prev"], .projects-section__navigation select[data-direction="prev"], .projects-section__navigation input[data-direction="prev"], .projects-section__navigation textarea[data-direction="prev"] {
-        left: 30px; } }
+        left: 30px; }
+  .about-section__additional-content {
+    padding: 30px calc((100% - 520px)/2); }
+  .about-hero__numbers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0; }
+    .about-hero__numbers-item {
+      width: 50%;
+      margin: 0;
+      margin-top: 15px; } }
 
 @media screen and (max-width: 575px) {
   .project-numbers__item {
     width: 50%; }
   .section__navigation-button {
     width: 30px;
-    height: 20px; } }
+    height: 20px; }
+  .about-section__additional-content {
+    padding: 30px 15px; } }
 
 @media screen and (min-width: 1680px) {
   .about-hero__title {

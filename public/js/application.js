@@ -66,7 +66,7 @@ function initMap() {
 const CUSTOM_CONTAINER_WIDTH = 1440;
 const CONTAINER_WIDTH = .86;
 const CUSTOM_TITLE_STEP = 75;
-const CUSTOM_MOBILE_TITLE_STEP = 55;
+const CUSTOM_MOBILE_TITLE_STEP = 65;
 // Modules
 const utilsModule = window.utils;
 // Variables
@@ -117,11 +117,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 320: {
                     slidesPerView: 1
                 },
-                576: {
+                768: {
                     slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 4
                 },
                 1440: {
                     slidesPerView: 4
