@@ -659,16 +659,16 @@
             max-width: 450px;
         }
         &__col {
-            margin-bottom: 30px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+            margin-bottom: 0;
             &:first-child {
                 padding-right: 15px;
             }
         }
         &__numbers {
             margin-top: 0;
+        }
+        &__address {
+            margin-bottom: 30px;
         }
     }
     .project-team {

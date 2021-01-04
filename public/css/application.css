@@ -8218,13 +8218,13 @@ a {
       margin-bottom: 30px;
       max-width: 450px; }
     .project-description__col {
-      margin-bottom: 30px; }
-      .project-description__col:last-child {
-        margin-bottom: 0; }
+      margin-bottom: 0; }
       .project-description__col:first-child {
         padding-right: 15px; }
     .project-description__numbers {
       margin-top: 0; }
+    .project-description__address {
+      margin-bottom: 30px; }
   .project-team {
     padding: 25px 30px; }
     .project-team__title {
