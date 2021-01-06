@@ -170,7 +170,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
     if (projectRoadCarousel) {
         new Swiper(projectRoadCarousel, {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 4,
+            autoplay: {
+                delay: 3000
+            },
             navigation: {
                 prevEl: projectRoadCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectRoadCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
@@ -178,15 +181,15 @@ document.addEventListener(`DOMContentLoaded`, () => {
             breakpoints: {
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 4
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 20
+                    spaceBetween: 4
                 },
                 1200: {
                     slidesPerView: 4,
-                    spaceBetween: 30
+                    spaceBetween: 4
                 }
             }
         });
