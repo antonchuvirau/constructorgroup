@@ -8440,7 +8440,19 @@ a {
   .about-section__additional-content {
     padding: 30px 15px; }
   .news-item__img {
-    max-height: none; } }
+    max-height: none; }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .row {
+    margin-left: -20px;
+    margin-right: -20px; }
+  div[class*="col-"] {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .link svg {
+    width: 17px;
+    height: auto; } }
 
 @media screen and (min-width: 1680px) {
   .about-hero__title {
