@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24.17" height="19.344">
-  <g transform="translate(-369.83 -25)">
-    <rect width="29.5" height="1.5" transform="matrix(0.788, 0.616, -0.616, 0.788, 370.754, 25)" fill="#222"/>
-    <rect width="29.5" height="1.5" transform="matrix(-0.788, 0.616, -0.616, -0.788, 394, 26.182)" fill="#222"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.17 19.344">
+  <g fill="#222">
+    <path d="M.924 0L24.17 18.172l-.924 1.182L0 1.182z"/>
+    <path d="M24.17 1.182L.924 19.354 0 18.172 23.246 0z"/>
   </g>
 </svg>
