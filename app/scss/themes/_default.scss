@@ -760,6 +760,11 @@
             display: none;
         }
     }
+    .project-road-select {
+        & select {
+            font-size: 1.5rem;
+        }
+    }
     .project-online-section {
         padding: 30px 0;
         padding-bottom: 50px;
@@ -1009,6 +1014,11 @@
                 margin: 0;
                 margin-top: 15px;
             }
+        }
+    }
+    .project-road-section {
+        &__title {
+            align-self: center;
         }
     }
 }

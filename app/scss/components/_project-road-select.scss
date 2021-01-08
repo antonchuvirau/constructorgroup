@@ -1,0 +1,27 @@
+.project-road-select {
+    position: relative;
+    background: rgba($light-100, .5);
+    & select {
+        position: relative;
+        padding: 10px 10px;
+        padding-right: 50px;
+        border-radius: 2px;
+        color: $black;
+        letter-spacing: .04em;
+        z-index: 2;
+    }
+    &:hover {
+        background: rgba($light-100, .6);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: icon('select-arrow.svg') no-repeat 50%;
+        top: 50%;
+        margin-top: -5px;
+        right: 10px;
+        z-index: 1;
+    }
+}

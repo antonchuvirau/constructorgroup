@@ -6917,6 +6917,12 @@ a {
       .article-template__options-link:last-child {
         margin-right: 0; }
 
+.project-road-section__select {
+  margin-left: auto; }
+
+.project-road-section__navigation {
+  margin-left: 80px; }
+
 .button {
   display: inline-block;
   padding: 0 70px;
@@ -7857,6 +7863,30 @@ a {
 .form__button {
   margin-top: 20px; }
 
+.project-road-select {
+  position: relative;
+  background: rgba(239, 239, 239, 0.5); }
+  .project-road-select select {
+    position: relative;
+    padding: 10px 10px;
+    padding-right: 50px;
+    border-radius: 2px;
+    color: #444;
+    letter-spacing: .04em;
+    z-index: 2; }
+  .project-road-select:hover {
+    background: rgba(239, 239, 239, 0.6); }
+  .project-road-select::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/select-arrow.svg") no-repeat 50%;
+    top: 50%;
+    margin-top: -5px;
+    right: 10px;
+    z-index: 1; }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 86%;
@@ -8311,6 +8341,8 @@ a {
     padding: 30px 0; }
     .project-road-section__navigation {
       display: none; }
+  .project-road-select select {
+    font-size: 1.5rem; }
   .project-online-section {
     padding: 30px 0;
     padding-bottom: 50px; }
@@ -8474,7 +8506,10 @@ a {
     .about-hero__numbers-item {
       width: 50%;
       margin: 0;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  .project-road-section__title {
+    -ms-flex-item-align: center;
+        align-self: center; } }
 
 @media screen and (max-width: 575px) {
   .project-numbers__item {

@@ -77,7 +77,8 @@
   'layout/project-online-section',
   'layout/contacts-template',
   'layout/news-template',
-  'layout/article-template';
+  'layout/article-template',
+  'layout/project-road-section';
 
 // 5. Components
 @import
@@ -97,7 +98,8 @@
   'components/project-road-item',
   'components/navigation',
   'components/slider',
-  'components/form';
+  'components/form',
+  'components/project-road-select';
 
 // 6. Page-specific styles
 @import
