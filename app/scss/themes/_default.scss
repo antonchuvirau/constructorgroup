@@ -658,6 +658,10 @@
         }
         &__media {
             margin: 0;
+            border-bottom: 1px solid rgba($black-300, .15);
+            &:last-child {
+                border-bottom: none;
+            }
         }
     }
     .project-description {
@@ -670,7 +674,7 @@
         &__col {
             margin-bottom: 0;
             &:first-child {
-                padding-right: 15px;
+                padding-right: 20px;
             }
         }
         &__numbers {
@@ -925,7 +929,11 @@
             }
         }
     }
+    .article-template, .contacts-template {
+        border-top: none;
+    }
     .news-template {
+        border-top: none;
         &__grid {
             padding: 30px 0;
             padding-bottom: 0;
@@ -968,7 +976,7 @@
             }
         }
     }
-    .projects-section {
+    .projects-section, .services-section {
         &__navigation {
             margin-left: 0;
             & button {
@@ -1020,7 +1028,7 @@
     }
     .about-section {
         &__additional-content {
-            padding: 30px 15px;
+            padding: 30px 20px;
         }
     }
     .news-item {

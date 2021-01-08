@@ -8243,7 +8243,10 @@ a {
     margin: 0;
     border-bottom: 1px solid rgba(112, 112, 112, 0.15); }
   .project-template__media {
-    margin: 0; }
+    margin: 0;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.15); }
+    .project-template__media:last-child {
+      border-bottom: none; }
   .project-description {
     padding: 30px 0;
     border-bottom: 1px solid rgba(112, 112, 112, 0.15); }
@@ -8253,7 +8256,7 @@ a {
     .project-description__col {
       margin-bottom: 0; }
       .project-description__col:first-child {
-        padding-right: 15px; }
+        padding-right: 20px; }
     .project-description__numbers {
       margin-top: 0; }
     .project-description__address {
@@ -8419,13 +8422,17 @@ a {
       font-size: 2.8rem; }
     .about-hero__numbers-text {
       font-size: 1rem; }
-  .news-template__grid {
-    padding: 30px 0;
-    padding-bottom: 0; }
-  .news-template__col {
-    margin-bottom: 30px; }
-  .news-template__title {
-    margin-bottom: 20px; }
+  .article-template, .contacts-template {
+    border-top: none; }
+  .news-template {
+    border-top: none; }
+    .news-template__grid {
+      padding: 30px 0;
+      padding-bottom: 0; }
+    .news-template__col {
+      margin-bottom: 30px; }
+    .news-template__title {
+      margin-bottom: 20px; }
   .article-template__grid {
     padding: 30px 0; }
   .article-template__content {
@@ -8446,17 +8453,17 @@ a {
       margin-top: 5px;
       font-size: 1.2rem;
       white-space: nowrap; }
-  .projects-section__navigation {
+  .projects-section__navigation, .services-section__navigation {
     margin-left: 0; }
-    .projects-section__navigation button, .projects-section__navigation select, .projects-section__navigation input, .projects-section__navigation textarea {
+    .projects-section__navigation button, .projects-section__navigation select, .projects-section__navigation input, .projects-section__navigation textarea, .services-section__navigation button, .services-section__navigation select, .services-section__navigation input, .services-section__navigation textarea {
       position: absolute;
       top: 55%;
       z-index: 2; }
-      .projects-section__navigation button path, .projects-section__navigation select path, .projects-section__navigation input path, .projects-section__navigation textarea path {
+      .projects-section__navigation button path, .projects-section__navigation select path, .projects-section__navigation input path, .projects-section__navigation textarea path, .services-section__navigation button path, .services-section__navigation select path, .services-section__navigation input path, .services-section__navigation textarea path {
         stroke: #fff; }
-      .projects-section__navigation button[data-direction="next"], .projects-section__navigation select[data-direction="next"], .projects-section__navigation input[data-direction="next"], .projects-section__navigation textarea[data-direction="next"] {
+      .projects-section__navigation button[data-direction="next"], .projects-section__navigation select[data-direction="next"], .projects-section__navigation input[data-direction="next"], .projects-section__navigation textarea[data-direction="next"], .services-section__navigation button[data-direction="next"], .services-section__navigation select[data-direction="next"], .services-section__navigation input[data-direction="next"], .services-section__navigation textarea[data-direction="next"] {
         right: 30px; }
-      .projects-section__navigation button[data-direction="prev"], .projects-section__navigation select[data-direction="prev"], .projects-section__navigation input[data-direction="prev"], .projects-section__navigation textarea[data-direction="prev"] {
+      .projects-section__navigation button[data-direction="prev"], .projects-section__navigation select[data-direction="prev"], .projects-section__navigation input[data-direction="prev"], .projects-section__navigation textarea[data-direction="prev"], .services-section__navigation button[data-direction="prev"], .services-section__navigation select[data-direction="prev"], .services-section__navigation input[data-direction="prev"], .services-section__navigation textarea[data-direction="prev"] {
         left: 30px; }
   .about-section__additional-content {
     padding: 30px calc((100% - 520px)/2); }
@@ -8476,7 +8483,7 @@ a {
     width: 30px;
     height: 20px; }
   .about-section__additional-content {
-    padding: 30px 15px; }
+    padding: 30px 20px; }
   .news-item__img {
     max-height: none; }
   .container {
