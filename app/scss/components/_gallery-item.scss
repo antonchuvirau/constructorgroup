@@ -1,0 +1,104 @@
+.gallery-item {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba($dark, .5), rgba($dark, 0));
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        // Flexible padding
+        padding: 6.1404% 7.78%;
+        z-index: 1;
+        &-title {
+            font-size: 1.1905vw;
+            font-weight: 600;
+            letter-spacing: .1em;
+            color: $white;
+            text-transform: uppercase;
+            line-height: 1.25;
+            &::after {
+                width: 50px;
+                height: 4px;
+                top: calc(100% + 5px);
+            }
+        }
+        &-details {
+            margin-top: 30px;
+            @include flex(row, center);
+        }
+        &-link {
+            opacity: 0;
+            margin-left: auto;
+            color: $dark;
+            font-size: .833vw;
+        }
+        &-photos {
+            @include flex(row, center);
+            color: $white;
+            letter-spacing: .04em;
+            font-size: .95238vw;
+            & svg {
+                position: relative;
+                top: -1.5px;
+                margin-right: 10px;
+                & path {
+                    backface-visibility: hidden;
+                }
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: $primary;
+            opacity: 0;
+            will-change: opacity;
+            transition: opacity .25s ease-in-out;
+            z-index: -1;
+        }
+    }
+    &:hover {
+        & .gallery-item {
+            &__content {
+                &::after {
+                    opacity: 1;
+                }
+                &-title {
+                    color: $dark;
+                    &::after {
+                        background: $white;
+                    }
+                }
+                &-photos {
+                    color: $dark;
+                    & svg {
+                        & path {
+                            fill: $dark;
+                        }
+                    }
+                }
+                &-link {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
