@@ -6065,10 +6065,6 @@ html {
   html.is-locked {
     overflow: hidden; }
     html.is-locked body {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
       overflow: hidden; }
       html.is-locked body .header {
         -webkit-box-shadow: none;
@@ -6328,7 +6324,12 @@ a {
       -o-transition: transform .25s ease-in-out, opacity .25s ease-in-out;
       transition: transform .25s ease-in-out, opacity .25s ease-in-out;
       transition: transform .25s ease-in-out, opacity .25s ease-in-out, -webkit-transform .25s ease-in-out;
-      pointer-events: none; }
+      pointer-events: none;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      will-change: opacity; }
       .header__menu-button-m-icon:nth-child(2) {
         -webkit-transform: translate3d(-50%, 100%, 0);
                 transform: translate3d(-50%, 100%, 0); }
@@ -8236,10 +8237,18 @@ a {
     font-size: 1.4rem; } }
 
 @media screen and (max-width: 991px) {
+  body {
+    padding-top: 70px; }
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 20px 0;
     -webkit-box-shadow: 0 3px 15px 0 rgba(34, 34, 34, 0.15);
-            box-shadow: 0 3px 15px 0 rgba(34, 34, 34, 0.15); }
+            box-shadow: 0 3px 15px 0 rgba(34, 34, 34, 0.15);
+    background: #fff;
+    z-index: 11; }
     .header__logo-icon {
       max-width: 187px; }
     .header__menu-button {

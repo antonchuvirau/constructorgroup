@@ -12,10 +12,6 @@ html {
     &.is-locked {
         overflow: hidden;
         & body {
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
             overflow: hidden;
             & .header {
                 box-shadow: none;

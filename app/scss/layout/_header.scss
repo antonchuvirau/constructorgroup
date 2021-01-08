@@ -55,6 +55,9 @@
             opacity: 0;
             transition: transform .25s ease-in-out, opacity .25s ease-in-out;
             pointer-events: none;
+            flex-shrink: 0;
+            backface-visibility: hidden;
+            will-change: opacity;
             &:nth-child(2) {
                 transform: translate3d(-50%, 100%, 0);
             }
