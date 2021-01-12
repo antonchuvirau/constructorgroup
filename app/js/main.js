@@ -122,6 +122,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(servicesSectionCarousel, {
             slidesPerView: 4,
             spaceBetween: 30,
+            pagination: {
+                el: servicesSectionCarousel.closest(`.section`).querySelector(`.swiper-pagination`)
+            },
             navigation: {
                 prevEl: servicesSectionCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: servicesSectionCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
