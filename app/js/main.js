@@ -82,7 +82,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     // Инициализация AOS
     AOS.init({
         offset: 100,
-        duration: 700,
+        duration: 600,
         easing: 'ease-in-sine',
         delay: 100
     });
@@ -146,8 +146,12 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (projectHeroSliderBox) {
         new Swiper(projectHeroSliderBox, {
+            autoplay: {
+                delay: 3500
+            },
             pagination: {
-                el: projectHeroSliderBox.closest(`.project-hero-slider`).querySelector(`.project-hero-slider__pagination`)
+                el: projectHeroSliderBox.closest(`.project-hero-slider`).querySelector(`.project-hero-slider__pagination`),
+                clickable: true
             }
         });
     }
