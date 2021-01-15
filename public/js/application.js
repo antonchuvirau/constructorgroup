@@ -175,8 +175,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
     // Инициализация AOS
     AOS.init({
         offset: 100,
-        duration: 600,
-        easing: 'ease-in-sine',
+        duration: 500,
+        offset: 50,
+        easing: 'ease-in-out-quad',
         delay: 100
     });
     if (counterBox) {
