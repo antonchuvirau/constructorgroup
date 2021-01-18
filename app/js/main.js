@@ -55,6 +55,7 @@ function count(options) {
 }
 
 // Constants
+const TIMER_SECONDS = 20000;
 const CUSTOM_STEP = 50;
 const CUSTOM_CONTAINER_WIDTH = 1440;
 const CONTAINER_WIDTH = .86;
@@ -96,6 +97,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
             // start all the timers
             $('.timer').each(count);
             isCounterCompleted = true;
+            let timer = setInterval(() => {
+                $('.timer').each(count);
+            }, TIMER_SECONDS);
         }
     }
     if (projectsSectionCarousel) {
@@ -160,7 +164,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         new Swiper(projectVideoCarousel, {
             slidesPerView: `auto`,
             spaceBetween: 30,
-            slidesOffsetBefore: getContainerOffset(),
+            // slidesOffsetBefore: getContainerOffset(),
             navigation: {
                 prevEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="prev"]`),
                 nextEl: projectVideoCarousel.closest(`.section`).querySelector(`button[data-direction="next"]`)
@@ -266,11 +270,14 @@ window.addEventListener(`scroll`, () => {
         if (windowHeight > (counterBoxOffsetTop + CUSTOM_STEP) && !isCounterCompleted) {
             // start all the timers
             $('.timer').each(count);
+            let timer = setInterval(() => {
+                $('.timer').each(count);
+            }, TIMER_SECONDS);
             isCounterCompleted = true;
         }
-        else if (windowHeight < (counterBoxOffsetTop + CUSTOM_STEP) && isCounterCompleted) {
-            isCounterCompleted = false;
-        }
+        // else if (windowHeight < (counterBoxOffsetTop + CUSTOM_STEP) && isCounterCompleted) {
+        //     isCounterCompleted = false;
+        // }
     }
 });
 

@@ -745,7 +745,8 @@
     .project-numbers {
         &__item {
             flex: 1 1 auto;
-            margin-top: 30px;
+            margin-top: auto;
+            margin-bottom: 30px;
             &-value {
                 font-size: 2.8rem;
             }
