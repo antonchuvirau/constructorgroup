@@ -82,10 +82,9 @@ let isCounterCompleted = false;
 document.addEventListener(`DOMContentLoaded`, () => {
     // Инициализация AOS
     AOS.init({
-        offset: 100,
-        duration: 500,
-        offset: 50,
-        easing: 'ease-in-out-quad',
+        offset: 200,
+        duration: 350,
+        easing: 'ease-in-sin',
         delay: 100
     });
     if (counterBox) {
