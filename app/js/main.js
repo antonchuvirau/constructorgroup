@@ -82,7 +82,7 @@ let isCounterCompleted = false;
 document.addEventListener(`DOMContentLoaded`, () => {
     // Инициализация AOS
     AOS.init({
-        offset: 200,
+        offset: 250,
         duration: 350,
         easing: 'ease-in-sin',
         delay: 100
