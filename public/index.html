@@ -18,7 +18,7 @@
     <link href="css/application.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
     <!-- Begin header -->
     <header data-aos="fade" data-aos-delay="100" class="header">
         <div class="container">
@@ -45,27 +45,30 @@
     <!-- Begin slider -->
     <div data-aos="fade" data-aos-delay="100" class="d-none d-md-flex hero-slider">
         <div class="hero-slider__item hero-slider__item_active">
+            <a href="#" class="hero-slider__item-project-link"></a>
             <img class="hero-slider__item-img" src="img/hero-slider@2x.jpg" alt="alt">
             <p class="hero-slider__item-name">Fairmont & Vesper</p>
             <div class="hero-slider__item-content">
                 <img class="hero-slider__item-icon" src="img/hero-slider-icon@2x.png" alt="alt">
-                <a href="#" class="hero-slider__item-link">Перейти в проект</a>
+                <span class="hero-slider__item-link">Перейти в проект</span>
             </div>
         </div>
         <div class="hero-slider__item">
+            <a href="#" class="hero-slider__item-project-link"></a>
             <img class="hero-slider__item-img" src="img/hero-slider@2x.jpg" alt="alt">
             <p class="hero-slider__item-name">Brodsky</p>
             <div class="hero-slider__item-content">
                 <img class="hero-slider__item-icon" src="img/hero-slider-icon@2x.png" alt="alt">
-                <a href="#" class="hero-slider__item-link">Перейти в проект</a>
+                <span class="hero-slider__item-link">Перейти в проект</span>
             </div>
         </div>
         <div class="hero-slider__item">
+            <a href="#" class="hero-slider__item-project-link"></a>
             <img class="hero-slider__item-img" src="img/hero-slider@2x.jpg" alt="alt">
             <p class="hero-slider__item-name">Lucky</p>
             <div class="hero-slider__item-content">
                 <img class="hero-slider__item-icon" src="img/hero-slider-icon@2x.png" alt="alt">
-                <a href="#" class="hero-slider__item-link">Перейти в проект</a>
+                <span class="hero-slider__item-link">Перейти в проект</span>
             </div>
         </div>
     </div>
@@ -102,16 +105,16 @@
     <!-- End mobile slider -->
     <!-- Begin main -->
     <main class="main">
-        <section class="about-section main__about-section">
+        <section data-aos="fade" class="about-section main__about-section">
             <div class="d-none d-xl-block about-section__img">
-                <img data-aos="fade-left" data-aos-delay="100" src="img/about-section.jpg" alt="alt">
+                <img data-aos="fade-left" data-aos-delay="100" data-aos-anchor=".about-section__title" src="img/about-section.jpg" alt="alt">
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-xl-4 about-section__col">
-                        <h1 data-aos="fade-right" data-aos-delay="100" class="title title_l line about-section__title">Constructor<span class="title__note about-section__title-note">group</span></h1>
-                        <p data-aos="fade-right" data-aos-delay="150" class="about-section__note">Генеральный подрядчик</p>
-                        <a data-aos="fade-right" data-aos-delay="200" href="/about.html" class="d-none d-xl-flex link about-section__link">
+                        <h1 data-aos="fade-right" data-aos-delay="100" data-aos-anchor=".about-section" class="title title_l line about-section__title">Constructor<span class="title__note about-section__title-note">group</span></h1>
+                        <p data-aos="fade-right" data-aos-delay="150" data-aos-anchor=".about-section" class="about-section__note">Генеральный подрядчик</p>
+                        <a data-aos="fade-right" data-aos-delay="200" data-aos-anchor=".about-section" href="/about.html" class="d-none d-xl-flex link about-section__link">
                             Подробнее
                             <svg xmlns="http://www.w3.org/2000/svg" width="24.307" height="12.616" viewBox="0 0 24.307 12.616">
                                 <g transform="translate(-49.998 168.309)">
@@ -123,7 +126,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div data-aos="fade" data-aos-delay="100" class="col-12 col-xl-4 about-section__col about-section__text">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".about-section" class="col-12 col-xl-4 about-section__col about-section__text">
                         <p>Компания специализируется на генеральном подряде, высотном строительстве, реконструкции зданий и сооружений любой сложности.</p>
                         <p>Компания специализируется на генеральном подряде, высотном строительстве, реконструкции зданий и сооружений любой сложности.</p>
                         <p>Наши дома стали настоящими украшениями центра Москвы и желанными формами в объективах камер профессионалов и любителей.</p>

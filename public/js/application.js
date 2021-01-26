@@ -146,6 +146,16 @@ function count(options) {
     options = $.extend({}, options || {}, $this.data('countToOptions') || {});
     $this.countTo(options);
 }
+function onHeroSliderBoxItemMouseOverHandler(evt) {
+    const target = evt.target;
+
+    if (!target.classList.contains(`hero-slider__item_active`)) {
+        utilsModule.changeDOMCollectionClass(target, heroSliderItemCollection, `hero-slider__item_active`);
+    }
+}
+// function onHeroSliderBoxItemMouseLeaveHandler(evt) {
+//     const target = evt.target;
+// }
 
 // Constants
 const TIMER_SECONDS = 20000;
@@ -158,6 +168,7 @@ const CUSTOM_MOBILE_TITLE_STEP = 65;
 const utilsModule = window.utils;
 // Variables
 const heroSliderBox = document.querySelector(`.hero-slider`);
+const heroSliderItemCollection = document.querySelectorAll(`.hero-slider__item`);
 const projectsSectionCarousel = document.querySelector(`.projects-section__carousel`);
 const servicesSectionCarousel = document.querySelector(`.services-section__carousel`);
 const projectHeroSliderBox = document.querySelector(`.project-hero-slider__box`);
@@ -175,10 +186,11 @@ let isCounterCompleted = false;
 document.addEventListener(`DOMContentLoaded`, () => {
     // Инициализация AOS
     AOS.init({
-        offset: 250,
-        duration: 350,
-        easing: 'ease-in-sin',
-        delay: 100
+        offset: 50,
+        duration: 900,
+        easing: 'ease',
+        delay: 100,
+        once: true
     });
     if (counterBox) {
         const counterBoxBoundingClientRect = counterBox.getBoundingClientRect();
@@ -376,4 +388,8 @@ window.addEventListener(`scroll`, () => {
 // События
 if (heroSliderBox) {
     heroSliderBox.addEventListener(`click`, onHeroSliderBoxClickHandler);
+    for (const heroSliderBoxItem of heroSliderItemCollection) {
+        heroSliderBoxItem.addEventListener(`mouseenter`, onHeroSliderBoxItemMouseOverHandler);
+        // heroSliderBoxItem.addEventListener(`mouseleave`, onHeroSliderBoxItemMouseLeaveHandler);
+    }
 }
